@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.932e7bda.js",
+    "main.js": "/static/js/main.f44c76bf.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/mypic.png": "/static/media/mypic.f513d81996cff26eab20.png",
+    "static/media/Shoaib-Mansuri-Resume.pdf": "/static/media/Shoaib-Mansuri-Resume.82fff1d7dcb9555a1a57.pdf",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.932e7bda.js.map": "/static/js/main.932e7bda.js.map",
+    "main.f44c76bf.js.map": "/static/js/main.f44c76bf.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.932e7bda.js"
+    "static/js/main.f44c76bf.js"
   ]
 }
