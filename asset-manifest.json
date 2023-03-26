@@ -1,18 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.cb9a328b.css",
-    "main.js": "/static/js/main.bcba7d1d.js",
+    "main.js": "/static/js/main.453825d7.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/w3.gif": "/static/media/w3.c2a2382f329e919f048f.gif",
+    "static/media/call.gif": "/static/media/call.8d152bbccff26cbdecf7.gif",
+    "static/media/in.png": "/static/media/in.dc8b608da27c7f368447.png",
+    "static/media/e.gif": "/static/media/e.ec895b23008d1a5de75e.gif",
     "static/media/mypic.png": "/static/media/mypic.f513d81996cff26eab20.png",
     "static/media/Shoaib-Mansuri-Resume.pdf": "/static/media/Shoaib-Mansuri-Resume.82fff1d7dcb9555a1a57.pdf",
     "static/media/dev-ed-wave.png": "/static/media/dev-ed-wave.96fe79664ed9e871bb6f.png",
+    "static/media/git1.gif": "/static/media/git1.0a15400b5361e436f1ed.gif",
     "index.html": "/index.html",
     "main.cb9a328b.css.map": "/static/css/main.cb9a328b.css.map",
-    "main.bcba7d1d.js.map": "/static/js/main.bcba7d1d.js.map",
+    "main.453825d7.js.map": "/static/js/main.453825d7.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb9a328b.css",
-    "static/js/main.bcba7d1d.js"
+    "static/js/main.453825d7.js"
   ]
 }
