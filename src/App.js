@@ -8,12 +8,12 @@ import Skills from './Component/Skills';
 import Projects from './Component/Projects';
 import Contact from './Component/Contact';
 import styled from '@emotion/styled';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { color } from 'framer-motion';
 
-function App() {
+function App() { 
   const [toggle,settoggle]=useState(false)
-
+  console.log(localStorage.getItem("theme"))
   return (
     <div style={{
       backgroundColor:toggle?"black":"white",
@@ -21,11 +21,13 @@ function App() {
       }}  className="App">    
         <Navbar toggle={toggle} settoggle={settoggle} />
       <div>
+        
         <Home />
         <About />
         <Skills />
         <Projects />
         <Contact />
+        
       </div>
     </div>
   );
