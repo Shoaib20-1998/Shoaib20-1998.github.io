@@ -18,6 +18,7 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
+  Icon,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon, DownloadIcon, MoonIcon, SettingsIcon, SunIcon } from '@chakra-ui/icons';
 import Home from './Home';
@@ -38,8 +39,8 @@ export default function Navbar({ toggle, settoggle }) {
 
 
   return (
-    <div className={styles.navbar}>
-      <Box id="nav-menu" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+    <div style={{boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}} className={styles.navbar}>
+      <Box  id="nav-menu" bg={useColorModeValue('white')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -116,9 +117,7 @@ export default function Navbar({ toggle, settoggle }) {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <Button bg={"node"} _hover={{ bg: "none" }} onClick={toggleColorMode}>
-              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-            </Button>
+
 
             <a className="nav-link resume" href={resume} download="Shoaib-Mansuri-Resume.pdf" >
               <Button
@@ -129,15 +128,20 @@ export default function Navbar({ toggle, settoggle }) {
                 Resume
               </Button>
             </a>
+            <Button bg={"node"} _hover={{ bg: "none" }} onClick={toggleColorMode}>
+              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+            </Button>
           </Flex>
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
-            <Stack spacing={4}>
+          <Box pb={0} display={{ md: 'none' }}>
+            <Stack spacing={0}>
 
-              <Newlink style={{ color: "white" }} className='nav-link home' to="home" spy={true} smooth={true} offset={-500} duration={500}>
-                <Button bg={"teal.500"} color={"white"} _hover={{
+            
+              <Newlink style={{ color: "white", margin: "15px, 15px," }} className='nav-link home' to="home" spy={true} smooth={true} offset={-500} duration={500}>
+               
+                <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>
                   {Links[0]}
@@ -145,28 +149,28 @@ export default function Navbar({ toggle, settoggle }) {
               </Newlink>
 
               <Newlink style={{ color: "white" }} className="nav-link about" to="about" spy={true} smooth={true} offset={-500} duration={500}>
-                <Button bg={"teal.500"} color={"white"} _hover={{
+                <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>
                   {Links[1]}
                 </Button>
               </Newlink>
               <Newlink style={{ color: "white" }} className="nav-link skills" to="skills" spy={true} smooth={true} offset={-500} duration={500} >
-                <Button bg={"teal.500"} color={"white"} _hover={{
+                <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>
                   {Links[2]}
                 </Button>
               </Newlink>
               <Newlink style={{ color: "white" }} className='nav-link projects' to="projects" spy={true} smooth={true} offset={-500} duration={500}>
-                <Button bg={"teal.500"} color={"white"} _hover={{
+                <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>
                   {Links[3]}
                 </Button>
               </Newlink>
               <Newlink style={{ color: "white" }} className='nav-link contact' to="contact" spy={true} smooth={true} offset={-500} duration={500} >
-                <Button bg={"teal.500"} color={"white"} _hover={{
+                <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>{Links[4]}
                 </Button>
