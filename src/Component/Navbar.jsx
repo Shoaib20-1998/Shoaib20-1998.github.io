@@ -17,26 +17,29 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  useColorMode,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, AddIcon, DownloadIcon, MoonIcon, SettingsIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, AddIcon, DownloadIcon, MoonIcon, SettingsIcon, SunIcon } from '@chakra-ui/icons';
 import Home from './Home';
 import styled from '@emotion/styled';
 import styles from './Css/Navbar.module.css'
 import { Link as Newlink } from 'react-scroll'
 import { color } from 'framer-motion';
+import About from './About';
+import Skills from './Skills';
+import Projects from './Projects';
+import Contact from './Contact';
 const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact Me'];
 
 
 export default function Navbar({ toggle, settoggle }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const handletoggle = () => {
-    settoggle(!toggle)
-  }
+  const { colorMode, toggleColorMode } = useColorMode();
 
 
   return (
     <div className={styles.navbar}>
-      <Box style={{ backgroundColor: toggle ? "black" : "white" }} id="nav-menu" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box id="nav-menu" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -113,7 +116,9 @@ export default function Navbar({ toggle, settoggle }) {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-            <button onClick={handletoggle}>{toggle ? <SettingsIcon /> : <MoonIcon />}</button>
+            <Button bg={"node"} _hover={{ bg: "none" }} onClick={toggleColorMode}>
+              {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+            </Button>
 
             <a className="nav-link resume" href={resume} download="Shoaib-Mansuri-Resume.pdf" >
               <Button
@@ -130,38 +135,48 @@ export default function Navbar({ toggle, settoggle }) {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack spacing={4}>
-              <Button bg={"teal.500"} color={"white"} _hover={{
-                bg: "teal.500"
-              }}>
-                <Newlink style={{ color: "white" }} className='nav-link home' to="home" spy={true} smooth={true} offset={-500} duration={500}>
+
+              <Newlink style={{ color: "white" }} className='nav-link home' to="home" spy={true} smooth={true} offset={-500} duration={500}>
+                <Button bg={"teal.500"} color={"white"} _hover={{
+                  bg: "teal.500"
+                }}>
                   {Links[0]}
-                </Newlink>
-              </Button>
-              <Button bg={"teal.500"} color={"white"} _hover={{
-                bg: "teal.500"
-              }}>
-                <Newlink style={{ color: "white" }} className="nav-link about" to="about" spy={true} smooth={true} offset={-500} duration={500}>{Links[1]}</Newlink>
-              </Button>
-              <Button bg={"teal.500"} color={"white"} _hover={{
-                bg: "teal.500"
-              }}>
-                <Newlink style={{ color: "white" }} className="nav-link skills" to="skills" spy={true} smooth={true} offset={-500} duration={500} >
-                  {Links[2]}</Newlink>
-              </Button>
-              <Button bg={"teal.500"} color={"white"} _hover={{
-                bg: "teal.500"
-              }}>
-                <Newlink style={{ color: "white" }} className='nav-link projects' to="projects" spy={true} smooth={true} offset={-500} duration={500}>{Links[3]}</Newlink>
-              </Button>
-              <Button bg={"teal.500"} color={"white"} _hover={{
-                bg: "teal.500"
-              }}>
-                <Newlink style={{ color: "white" }} className='nav-link contact' to="contact" spy={true} smooth={true} offset={-500} duration={500} >{Links[4]}</Newlink>
-              </Button>
+                </Button>
+              </Newlink>
+
+              <Newlink style={{ color: "white" }} className="nav-link about" to="about" spy={true} smooth={true} offset={-500} duration={500}>
+                <Button bg={"teal.500"} color={"white"} _hover={{
+                  bg: "teal.500"
+                }}>
+                  {Links[1]}
+                </Button>
+              </Newlink>
+              <Newlink style={{ color: "white" }} className="nav-link skills" to="skills" spy={true} smooth={true} offset={-500} duration={500} >
+                <Button bg={"teal.500"} color={"white"} _hover={{
+                  bg: "teal.500"
+                }}>
+                  {Links[2]}
+                </Button>
+              </Newlink>
+              <Newlink style={{ color: "white" }} className='nav-link projects' to="projects" spy={true} smooth={true} offset={-500} duration={500}>
+                <Button bg={"teal.500"} color={"white"} _hover={{
+                  bg: "teal.500"
+                }}>
+                  {Links[3]}
+                </Button>
+              </Newlink>
+              <Newlink style={{ color: "white" }} className='nav-link contact' to="contact" spy={true} smooth={true} offset={-500} duration={500} >
+                <Button bg={"teal.500"} color={"white"} _hover={{
+                  bg: "teal.500"
+                }}>{Links[4]}
+                </Button>
+              </Newlink>
             </Stack>
           </Box>
         ) : null}
       </Box>
+
+
 
     </div >
   );

@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 
 import Navbar from './Component/Navbar';
 import Home from './Component/Home';
@@ -12,21 +10,18 @@ import { useEffect, useState } from 'react';
 import { color } from 'framer-motion';
 
 function App() { 
-  const [toggle,settoggle]=useState(false)
-  console.log(localStorage.getItem("theme"))
+ 
   return (
-    <div style={{
-      backgroundColor:toggle?"black":"white",
-      color:toggle?"white":"black"
-      }}  className="App">    
-        <Navbar toggle={toggle} settoggle={settoggle} />
-      <div>
-        
+    <div className="App">    
+        <Navbar />
         <Home />
         <About />
         <Skills />
         <Projects />
         <Contact />
+      <div>
+        
+        
         
       </div>
     </div>

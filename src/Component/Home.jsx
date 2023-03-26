@@ -32,7 +32,7 @@ function Home() {
 const DIV=styled.div`
     border:1px solid black;
     width:80%;
-    margin: 80px auto;
+    margin: 200px auto;
     padding-top: 50px;
 `
 
