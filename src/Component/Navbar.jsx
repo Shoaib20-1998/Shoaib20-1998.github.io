@@ -40,7 +40,7 @@ export default function Navbar({ toggle, settoggle }) {
 
   return (
     <div style={{boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"}} className={styles.navbar}>
-      <Box  id="nav-menu" bg={useColorModeValue('white')} px={4}>
+      <Box  id="nav-menu" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}

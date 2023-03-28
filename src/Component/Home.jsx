@@ -3,11 +3,11 @@ import styled from '@emotion/styled'
 import React from 'react'
 import dev from '../images/dev-ed-wave.png'
 import Typed from 'react-typed';
-import git from '../images/git1.gif'
-import email from '../images/e.gif'
+import git from '../images/github logo.png'
 import linkdin from '../images/in.png'
-import whats from '../images/w3.gif'
-import call from '../images/call.gif'
+import call from '../images/support.png'
+import gmail from '../images/gmail.png'
+
 
 function Home() {
 
@@ -31,14 +31,13 @@ function Home() {
                         /> <ChevronRightIcon /> </p>
 
                     </div>
-                    
+
                 </DIV1>
                 <DIV2 className='sociallogo'>
-                     <a href="https://github.com/Shoaib20-1998"><img src={git} alt="" /></a>
-                     <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src={email} alt="" /></a>     
-                      <a href="https://api.whatsapp.com/send?phone=+918003740674">  <img src={whats} alt="" /></a>
-                      <a href="tel:+918003740674"> <img src={call} alt="" /> </a>
-                      <a href="https://www.linkedin.com/in/shoaib-mansuri-7753b2218/"> <img src={linkdin} alt="" /></a>
+                    <a id="contact-github" href="https://github.com/Shoaib20-1998" target="_blank" rel="noopener"><img src={git} alt="" /></a>
+                    <a id="contact-phone" href="tel:+918003740674" target="_blank" rel="noopener"> <img src={call} alt="" /> </a>
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/shoaib-mansuri-7753b2218/" target="_blank" rel="noopener"> <img src={linkdin} alt="" /></a>
+                    <a id="contact-email" href="mailto:shoaibmansuri235@gmail.com" target="_blank" rel="noopener"><img src={gmail} alt="" /></a>
                 </DIV2>
 
 
@@ -53,7 +52,7 @@ const DIV1 = styled.div`
     justify-content: space-evenly;
     align-items: center;
     width:80%;
-    margin: 100px auto 50px;
+    margin: 100px auto 0;
     text-align:"center";
     padding-top: 45px;
     .imgdiv{
@@ -76,32 +75,44 @@ const DIV1 = styled.div`
 
     @media only screen and (min-width: 601px) and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
+   
+    display: block;
+    .imgdiv{
+        width: 100%;
+    }
     .name-title,.name-title>h1{
-        font-size:20px ;
+        margin-top:20px;
+        font-size:35px ;
     }
     .name-title,.name-title>h4{
         font-family: sans-serif;
-        font-size: 10px;
+        font-size: 20px;
     }
   }
     @media only screen and (min-width:426px) and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
 
+    .imgdiv{
+        width: 100%;
+    }
     .name-title,.name-title>h1{
-        font-size:20px ;
+        font-size:25px ;
         margin-top:20px;
     }
     .name-title,.name-title>h4{
         font-family: sans-serif;
-        font-size: 10px;
+        font-size: 15px;
     }
     
     display: block;
-    margin: 70px auto;
+    margin: 70px auto 0;
 
     }
     @media only screen and (min-width: 325px) and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
+    .imgdiv{
+        width: 100%;
+    }
     .name-title,.name-title>h1{
         font-size:20px ;
         margin-top:20px;
@@ -112,7 +123,7 @@ const DIV1 = styled.div`
        
     }
     display: block;
-    margin: 70px auto;
+    margin: 70px auto 0;
     }
 
     
@@ -122,14 +133,47 @@ const DIV1 = styled.div`
 const DIV2 = styled.div`
 display: flex;
 justify-content: space-evenly;
-width: 80%;
-margin: auto;
+border: 1px teal;
+border-bottom-style: dotted;
+border-left-style: dotted;
+width: 50%;
+margin: 0 auto 0;
+padding: 10px;
+
 img{
-    width: 150px;
-    margin-left: 40px;
+    width: 150px; 
     padding: 10px;
 
 }
+@media only screen and (min-width: 601px) and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    margin-top: 0px;
+    img{
+    width: 80px;   
+    padding: 10px;
+     }
+  }
+    @media only screen and (min-width:426px) and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+
+    margin-top: 0px;
+    img{
+    width: 70px;   
+    padding: 10px;
+     }
+    }
+    @media only screen and (min-width: 325px) and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    margin-top: 0px;
+    img{
+    width: 60px;   
+    padding: 10px;
+     }
+    
+    }
+
+
+
 
 `
 

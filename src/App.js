@@ -12,7 +12,7 @@ import { color } from 'framer-motion';
 function App() { 
  
   return (
-    <div className="App">    
+    <div >    
         <Navbar />
         <Home />
         <About />
