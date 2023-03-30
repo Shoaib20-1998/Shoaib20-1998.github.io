@@ -20,7 +20,7 @@ function Home() {
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <div className="imgdiv">
-                        <img className='topimg' style={{ backgroundColor: "teal", borderRadius: "600px" }} src={dev} alt="" />
+                        <img  oncontextmenu="return false;" className='topimg' style={{ backgroundColor: "teal", borderRadius: "600px" }} src={dev} alt="" />
                     </div>
                     <div className='name-title'>
                         <h1 id="user-detail-name" style={{ textAlign: "center" }}>Hi 👋 I'm Shoaib Mansuri </h1>
@@ -57,6 +57,7 @@ const DIV1 = styled.div`
     padding-top: 45px;
     .imgdiv{
         width: 50%;
+        pointer-events: none;
     }
     .name-title{
         font-family: sans-serif;

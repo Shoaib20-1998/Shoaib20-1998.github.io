@@ -16,7 +16,7 @@ function About() {
         </div>
         <div className='description'>
           <h1 className='profheading'> Professional Summary :</h1>
-          <p>Full Stack Web Developer Specialized in Mern Stack.
+          <p align="justify">Full Stack Web Developer Specialized in Mern Stack.
              Skilled in developing web applications. 1000+ hours of coding experience and top of that build some Projects.
              Solved 400+ Data Structure And Algoritham problems. Looking forward to honing my skills in an organization. </p>
         </div>
@@ -58,10 +58,9 @@ const DIV = styled.div`
     
     .description{
       text-align: left;
-      padding:5px;
+      padding:5px 20px;
       font-size: 25px;
       margin-left: 30px;
-
       font-family: sans-serif;
        color:white;
     }
@@ -71,13 +70,31 @@ const DIV = styled.div`
       padding: 25px auto;
     }
 
-    @media only screen and (min-width: 601px) and (max-width: 1200px){
+  @media only screen and (min-width: 601px) and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
     .heading{
       font-size:40px;
     }
     .intro{
       display: block;
+      width: 100%;
+      margin: 40px auto ;
+      padding: 5px 10px 20px;
+    }
+    .description{
+      text-align: left;
+      padding:5px 15px;
+      font-size: 20px;
+      margin-left: 30px;
+      font-family: sans-serif;
+       color:white;
+      margin: auto;
+
+    }
+    .profheading{
+      font-size: 30px;
+      margin: 10px auto;
+      padding: 10px auto;
     }
   }
     @media only screen and (min-width:426px) and (max-width: 600px){
@@ -87,6 +104,24 @@ const DIV = styled.div`
     }
     .intro{
       display: block;
+      width: 100%;
+      margin: 40px auto ;
+      padding: 5px 10px 20px;
+    }
+    .description{
+      text-align: left;
+      padding:5px 15px;
+      font-size: 18px;
+      margin-left: 30px;
+      font-family: sans-serif;
+      color:white;
+      margin: auto;
+
+    }
+    .profheading{
+      font-size: 24px;
+      margin: 10px auto;
+      padding: 10px auto;
     }
 
     }
@@ -98,6 +133,23 @@ const DIV = styled.div`
     }
     .intro{
       display: block;
+      width: 100%;
+      margin: 40px auto ;
+      padding: 5px 10px 20px;
+    }
+    .description{
+      text-align: left;
+      padding:5px ;
+      font-size: 15px;
+      margin-left: 30px;
+      font-family: sans-serif;
+      color:white;
+      margin: auto;
+    }
+    .profheading{
+      font-size: 19px;
+      margin: 10px auto;
+      padding: 10px auto;
     }
     
     }

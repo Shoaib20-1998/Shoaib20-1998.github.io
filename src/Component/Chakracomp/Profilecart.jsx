@@ -24,13 +24,7 @@ import { ViewIcon } from '@chakra-ui/icons';
           bg={useColorModeValue('white', 'gray.800')}
           boxShadow={'2xl'}
           rounded={'md'}
-          overflow={'hidden'}>
-          <Image
-            h={'120px'}
-            w={'full'}
-            src="https://media1.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif?cid=ecf05e47i3b44b6th9va4zisl2kdui4dxsc9kemzkjukkop6&rid=giphy.gif&ct=g"
-            objectFit={'cover'}
-          />
+          >
           <Flex justify={'center'} mt={-12}>
             <Avatar
               size={'xl'}
@@ -40,19 +34,12 @@ import { ViewIcon } from '@chakra-ui/icons';
               }
               alt={'Author'}
               css={{
-                border: '2px solid white',
+                border: '4px dotted teal',
               }}
             />
           </Flex>
   
-          <Box p={6}>
-            <Stack spacing={0} align={'center'} mb={5}>
-              <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
-                Shoaib Mansuri
-              </Heading>
-              <Text color={'gray.500'}>A Full Stack Web Developer</Text>
-            </Stack>
-  
+          <Box p={6}>      
             <Stack direction={'row'} justify={'center'} spacing={6}>
               <Stack spacing={0} align={'center'}>
                 <Text fontWeight={600}>3</Text>
