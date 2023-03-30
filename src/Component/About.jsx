@@ -6,7 +6,7 @@ import Profile from './Chakracomp/Profilecart'
 
 function About() {
   return (
-    <DIV id="about" className="about section">
+    <DIV  id="about" className="about section" >
 
       <button className='heading'>About Me</button>
 
@@ -15,13 +15,41 @@ function About() {
           <Profile />
         </div>
         <div className='description'>
-          <h1 className='profheading'> Professional Summary :</h1>
+          <h1 id="user-detail-intro" className='profheading'> Professional Summary :</h1>
           <p align="justify">Full Stack Web Developer Specialized in Mern Stack.
-             Skilled in developing web applications. 1000+ hours of coding experience and top of that build some Projects.
-             Solved 400+ Data Structure And Algoritham problems. Looking forward to honing my skills in an organization. </p>
+            Skilled in developing functional and responsive web applications. 1000+ hours of coding experience and top of that build some Projects
+            With a strong foundation in programming languages such as HTML, CSS, JavaScript, and MERN </p>
         </div>
       </div>
 
+      <div data-aos="fade-right" className='aboutdetails'>
+
+        <div className='subaboutdetails'>          
+          <p><span>1000+</span> Hours </p>
+          <p> of Coding Experience</p>
+
+        </div>
+        <div className='subaboutdetails'>
+          <img src="" alt="" />
+          
+          <p>Solved <span>400+</span></p>
+          <p>Data Structure & Algoritham Problems</p>
+        </div>
+        <div className='subaboutdetails'>
+          <img src="" alt="" />
+          
+          <p><span>100+</span> Hours </p>
+          <p>of Soft Skills Development</p>
+        </div>
+        <div className='subaboutdetails'>
+          <img src="" alt="" />
+          <p><span>5+</span> Major Projects</p>
+          <p><span>30+</span> Mini Project assignments </p>       
+        </div>   
+      </div>
+      
+       
+        {/* <i class="fa-solid fa-code fa-flip" style="color: #008080;"></i> */}
 
     </DIV>
   )
@@ -48,7 +76,7 @@ const DIV = styled.div`
     .intro{
       display: flex;
       width: 80%;
-      margin: 40px auto ;
+      margin: 40px auto 10px;
       padding: 5px 10px;
       justify-content: space-between;
       align-items: center;
@@ -68,6 +96,31 @@ const DIV = styled.div`
       font-size: 40px;
       margin: 25px auto;
       padding: 25px auto;
+    }
+    .aboutdetails{
+      display: flex;
+      height: 180px;
+      width: 80%;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      text-align:center;
+      align-items: center;
+    }
+    .subaboutdetails{
+      background-color: teal;
+      width:250px;
+      padding: 30px;
+      border-radius: 200px;
+      color:white;
+      font-family: sans-serif;
+    }
+    .closingtagdiv{
+      width: 80%;
+      text-align:center;
+    }
+    span{ 
+      font-weight: bolder;
+      font-size: larger;
     }
 
   @media only screen and (min-width: 601px) and (max-width: 1200px){
@@ -96,10 +149,41 @@ const DIV = styled.div`
       margin: 10px auto;
       padding: 10px auto;
     }
+    .aboutdetails{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap:20px;
+      height: 180px;
+      width: 80%;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      text-align:center;
+      align-items: center;
+    }
+    .subaboutdetails{
+      background-color: teal;
+      padding: 30px;
+      border-radius: 200px;
+      color:white;
+      font-family: sans-serif;
+    }
+    
+    
+    .closingtagdiv{
+      width: 100%;   
+    }
+   
+    
+    span{ 
+      font-weight: bolder;
+      font-size: larger;
+    }
+
+
   }
     @media only screen and (min-width:426px) and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
-  .heading{
+    .heading{
       font-size:30px;
     }
     .intro{
@@ -122,6 +206,39 @@ const DIV = styled.div`
       font-size: 24px;
       margin: 10px auto;
       padding: 10px auto;
+    }
+
+    .aboutdetails{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap:20px;
+      height: 180px;
+      width: 80%;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      text-align:center;
+      align-items: center;
+    }
+    .subaboutdetails{
+      background-color: teal;
+      font-size: small;
+      height: auto;
+      width:100%;
+      padding: 30px;
+      border-radius: 200px;
+      color:white;
+      font-family: sans-serif;
+    }
+    
+    
+    .closingtagdiv{
+      width: 50%;   
+    }
+   
+    
+    span{ 
+      font-weight: bolder;
+      font-size: larger;
     }
 
     }
@@ -151,6 +268,39 @@ const DIV = styled.div`
       margin: 10px auto;
       padding: 10px auto;
     }
+    .aboutdetails{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap:10px;
+
+      width: 80%;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      text-align:center;
+      align-items: center;
+    }
+    .subaboutdetails{
+      background-color: teal;
+      font-size: 15px;
+      height: auto;
+      width:100%;
+      padding: 10px;
+      border-radius: 200px;
+      color:white;
+      font-family: sans-serif;
+    }
+    
+    
+    .closingtagdiv{
+      width: 50%;   
+    }
+   
+    
+    span{ 
+      font-weight: bolder;
+      font-size: larger;
+    }
+
     
     }
 `

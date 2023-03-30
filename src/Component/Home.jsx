@@ -24,7 +24,7 @@ function Home() {
                     </div>
                     <div className='name-title'>
                         <h1 id="user-detail-name" style={{ textAlign: "center" }}>Hi 👋 I'm Shoaib Mansuri </h1>
-                        <p id="user-detail-intro" > <ChevronLeftIcon /> <Typed
+                        <p> <ChevronLeftIcon /> <Typed
                             strings={['A Full Stack Web Developer']}
                             typeSpeed={80}
                             loop

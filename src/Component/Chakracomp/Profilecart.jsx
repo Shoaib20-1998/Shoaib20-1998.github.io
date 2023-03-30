@@ -37,6 +37,7 @@ import { ViewIcon } from '@chakra-ui/icons';
                 border: '4px dotted teal',
               }}
             />
+        
           </Flex>
   
           <Box p={6}>      
@@ -55,7 +56,9 @@ import { ViewIcon } from '@chakra-ui/icons';
               </Stack>
             </Stack>
   
-          <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link"><Button
+          <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link">
+            <Button
+            fontSize={["sm","md","lg"]}
               w={'full'}
               mt={8}
               bg={"teal"}
@@ -65,7 +68,7 @@ import { ViewIcon } from '@chakra-ui/icons';
                 transform: 'translateY(-2px)',
                 boxShadow: 'lg',
               }}
-          
+           
               leftIcon={<ViewIcon />}>
              Resume 
             </Button>
