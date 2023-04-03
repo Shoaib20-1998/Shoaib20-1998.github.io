@@ -7,20 +7,15 @@ import git from '../images/github logo.png'
 import linkdin from '../images/in.png'
 import call from '../images/support.png'
 import gmail from '../images/gmail.png'
-
-
+import FontAwsomeCodeIcon from './Chakracomp/FontAwsomeCodeIcon';
 function Home() {
-
-
-    return (
-        // "
-        <>
+    return (  
             <div id="home"  >
                 <DIV1 data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     <div className="imgdiv">
-                        <img  oncontextmenu="return false;" className='topimg' style={{ backgroundColor: "teal", borderRadius: "600px" }} src={dev} alt="" />
+                        <img oncontextmenu="return false;" className='topimg' style={{ backgroundColor: "teal", borderRadius: "600px" }} src={dev} alt="" />
                     </div>
                     <div className='name-title'>
                         <h1 id="user-detail-name" style={{ textAlign: "center" }}>Hi 👋 I'm Shoaib Mansuri </h1>
@@ -29,23 +24,22 @@ function Home() {
                             typeSpeed={80}
                             loop
                         /> <ChevronRightIcon /> </p>
-
                     </div>
-
                 </DIV1>
                 <DIV2 className='sociallogo'>
                     <a id="contact-github" href="https://github.com/Shoaib20-1998" target="_blank" rel="noopener"><img src={git} alt="" /></a>
                     <a id="contact-phone" href="tel:+918003740674" target="_blank" rel="noopener"> <img src={call} alt="" /> </a>
                     <a id="contact-linkedin" href="https://www.linkedin.com/in/shoaib-mansuri-7753b2218/" target="_blank" rel="noopener"> <img src={linkdin} alt="" /></a>
                     <a id="contact-email" href="mailto:shoaibmansuri235@gmail.com" target="_blank" rel="noopener"><img src={gmail} alt="" /></a>
-                </DIV2>
-
-
+                </DIV2>              
+                <FontAwsomeCodeIcon />
             </div>
-        </>
+        
 
     )
 }
+
+
 
 const DIV1 = styled.div`
     display: flex;

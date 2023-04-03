@@ -2,14 +2,16 @@ import styled from '@emotion/styled'
 import React from 'react'
 import cover from '../images/cover.png'
 import Profile from './Chakracomp/Profilecart'
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode } from '@fortawesome/free-solid-svg-icons'
+import Headingofsection from './Chakracomp/Headingofsection'
+import FontAwsomeCodeIcon from './Chakracomp/FontAwsomeCodeIcon'
 function About() {
   return (
+    
     <DIV  id="about" className="about section" >
 
-      <button className='heading'>About Me</button>
-
+     <Headingofsection heading={"About Me"} />
       <div data-aos="zoom-in" className='intro'  >
         <div className='profile'>
           <Profile />
@@ -21,23 +23,18 @@ function About() {
             With a strong foundation in programming languages such as HTML, CSS, JavaScript, and MERN </p>
         </div>
       </div>
-
       <div  className='aboutdetails'>
-
         <div className='subaboutdetails' data-aos="fade-right">          
           <p><span>1000+</span> Hours </p>
           <p> of Coding Experience</p>
-
         </div>
         <div className='subaboutdetails' data-aos="fade-left" >
-          <img src="" alt="" />
-          
+          <img src="" alt="" />    
           <p>Solved <span>400+</span></p>
           <p>Data Structure & Algoritham Problems</p>
         </div>
         <div className='subaboutdetails'  data-aos="fade-right">
-          <img src="" alt="" />
-          
+          <img src="" alt="" />        
           <p><span>100+</span> Hours </p>
           <p>of Soft Skills Development</p>
         </div>
@@ -46,15 +43,47 @@ function About() {
           <p><span>5+</span> Major Projects</p>
           <p><span>30+</span> Mini Project assignments </p>       
         </div>   
-
-      </div>
-      
-       
-        {/* <i class="fa-solid fa-code fa-flip" style="color: #008080;"></i> */}
-
+       <FontAwsomeCodeIcon />
+      </div>           
     </DIV>
+   
   )
 }
+
+const ICON=styled.div`
+
+  /* border:1px solid black; */
+  margin:20px auto 20px;
+   width:160px;
+  .iconstyle{
+    color: #008080;
+    font-Size: 120px;
+  }
+   @media only screen and (min-width: 601px) and (max-width: 1200px){
+   width:100px;
+    .iconstyle{
+    color: #008080;
+    font-Size: 80px;
+  }
+   }
+
+   @media only screen and (min-width:426px) and (max-width: 600px){
+    width:80px;
+    .iconstyle{
+    color: #008080;
+    font-Size: 60px;
+  }
+   }
+
+   @media only screen and (min-width: 325px) and (max-width: 425px){
+
+    width:60px;
+    .iconstyle{
+    color: #008080;
+    font-Size: 40px;
+  }
+   }
+`
 
 const DIV = styled.div`
     /* border:1px solid red; */
@@ -63,17 +92,7 @@ const DIV = styled.div`
     margin: 70px auto 0;
     font-family: sans-serif;
 
-    .heading{
-      font-size:70px;
-      color: teal;
-      border: 1px teal;
-      border-bottom-style: dotted;
-      border-left-style: dotted;
-      margin:10px 5px;
-      padding: 10px 30px;
-      font-family:sans-serif;
-    }
-
+    
     .intro{
       display: flex;
       width: 80%;
