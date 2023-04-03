@@ -10,7 +10,7 @@ function About() {
 
       <button className='heading'>About Me</button>
 
-      <div className='intro' data-aos="fade-right" >
+      <div data-aos="zoom-in" className='intro'  >
         <div className='profile'>
           <Profile />
         </div>
@@ -22,30 +22,31 @@ function About() {
         </div>
       </div>
 
-      <div data-aos="fade-right" className='aboutdetails'>
+      <div  className='aboutdetails'>
 
-        <div className='subaboutdetails'>          
+        <div className='subaboutdetails' data-aos="fade-right">          
           <p><span>1000+</span> Hours </p>
           <p> of Coding Experience</p>
 
         </div>
-        <div className='subaboutdetails'>
+        <div className='subaboutdetails' data-aos="fade-left" >
           <img src="" alt="" />
           
           <p>Solved <span>400+</span></p>
           <p>Data Structure & Algoritham Problems</p>
         </div>
-        <div className='subaboutdetails'>
+        <div className='subaboutdetails'  data-aos="fade-right">
           <img src="" alt="" />
           
           <p><span>100+</span> Hours </p>
           <p>of Soft Skills Development</p>
         </div>
-        <div className='subaboutdetails'>
+        <div className='subaboutdetails'  data-aos="fade-left">
           <img src="" alt="" />
           <p><span>5+</span> Major Projects</p>
           <p><span>30+</span> Mini Project assignments </p>       
         </div>   
+
       </div>
       
        
