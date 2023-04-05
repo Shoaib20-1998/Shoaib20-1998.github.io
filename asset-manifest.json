@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.97229d6b.css",
-    "main.js": "/static/js/main.65757114.js",
+    "main.css": "/static/css/main.b8608a65.css",
+    "main.js": "/static/js/main.af188cec.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/mypic.png": "/static/media/mypic.f513d81996cff26eab20.png",
     "static/media/Shoaib-Mansuri-Resume.pdf": "/static/media/Shoaib-Mansuri-Resume.82fff1d7dcb9555a1a57.pdf",
@@ -14,12 +14,12 @@
     "static/media/support.png": "/static/media/support.68f04ba1ff357ef6e8ef.png",
     "static/media/css.png": "/static/media/css.7b319d749db8f8061d9e.png",
     "index.html": "/index.html",
-    "main.97229d6b.css.map": "/static/css/main.97229d6b.css.map",
-    "main.65757114.js.map": "/static/js/main.65757114.js.map",
+    "main.b8608a65.css.map": "/static/css/main.b8608a65.css.map",
+    "main.af188cec.js.map": "/static/js/main.af188cec.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97229d6b.css",
-    "static/js/main.65757114.js"
+    "static/css/main.b8608a65.css",
+    "static/js/main.af188cec.js"
   ]
 }
