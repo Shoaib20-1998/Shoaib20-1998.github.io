@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb9a328b.css",
-    "main.js": "/static/js/main.ab0c9853.js",
+    "main.css": "/static/css/main.97229d6b.css",
+    "main.js": "/static/js/main.65757114.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/mypic.png": "/static/media/mypic.f513d81996cff26eab20.png",
     "static/media/Shoaib-Mansuri-Resume.pdf": "/static/media/Shoaib-Mansuri-Resume.82fff1d7dcb9555a1a57.pdf",
     "static/media/dev-ed-wave.png": "/static/media/dev-ed-wave.96fe79664ed9e871bb6f.png",
     "static/media/cover.png": "/static/media/cover.d1e51644522f87ec6760.png",
-    "static/media/whatsapp.png": "/static/media/whatsapp.d026940870fb334920b7.png",
+    "static/media/vscode.png": "/static/media/vscode.14c069535078697cf3b9.png",
     "static/media/github logo.png": "/static/media/github logo.22cfdd1cba253783ce51.png",
     "static/media/in.png": "/static/media/in.37d2c5e2d14b4e4ce1b6.png",
+    "static/media/ex1.png": "/static/media/ex1.afc334ddfc33798daeb2.png",
     "static/media/support.png": "/static/media/support.68f04ba1ff357ef6e8ef.png",
+    "static/media/css.png": "/static/media/css.7b319d749db8f8061d9e.png",
     "index.html": "/index.html",
-    "main.cb9a328b.css.map": "/static/css/main.cb9a328b.css.map",
-    "main.ab0c9853.js.map": "/static/js/main.ab0c9853.js.map",
+    "main.97229d6b.css.map": "/static/css/main.97229d6b.css.map",
+    "main.65757114.js.map": "/static/js/main.65757114.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb9a328b.css",
-    "static/js/main.ab0c9853.js"
+    "static/css/main.97229d6b.css",
+    "static/js/main.65757114.js"
   ]
 }
