@@ -1,36 +1,32 @@
 import styled from '@emotion/styled'
-import React from 'react'
+import React,{useRef} from 'react'
+import Headingofsection from './Chakracomp/Headingofsection'
+import SkillSection from './Chakracomp/SkillSection'
+import FontAwsomeCodeIcon from './Chakracomp/FontAwsomeCodeIcon'
 
 function Skills() {
   return (
-    <DIV id="skills" >Skills
-    <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-        </DIV>
-    )
+    <DIV id="skills" className="skills-card" >
+      
+      <Headingofsection heading={"Tech Stack and Dev Tools"} />
+      <SkillSection />
+      <FontAwsomeCodeIcon />
+  
+    </DIV>
+  )
 }
-
-const DIV=styled.div`
-    border:1px solid black;
-    width:80%;
-    margin: 100px auto;
-`
 export default Skills
+
+const DIV = styled.div`
+    width:80%;
+    margin: 5% auto 0;
+    text-align:center;
+    .skillsmaindiv{
+      display:flex;
+      /* grid-template-Columns:repeat(5,1fr); */
+      justify-content:space-evenly;
+    }
+    img{
+      width:30%
+    }
+`

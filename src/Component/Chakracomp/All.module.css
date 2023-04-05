@@ -1,0 +1,96 @@
+.skillssection {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .skillssection h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00a3a3;
+  }
+  
+  .skillbar {
+    background-color: teal;
+    height: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+  }
+  
+  .skillbar span {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #fff;
+  }
+  
+  .skill-bar .skill-icon {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .skill-bar div {
+    background-color: #00a3a3;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+   
+    
+  }  
+    
+    @media only screen and (min-width:426px) and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/  
+      
+  .skillssection {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+  .skillbar {
+    background-color: teal;
+    height: 3.0rem;
+  }
+  
+  .skillbar span {
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: #fff;
+  }
+    
+  }
+
+  @media only screen and (min-width: 50px) and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+  .skillssection {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+  .skillbar {
+    background-color: teal;
+    height: 3.0rem;
+  }
+  
+  .skillbar span {
+    font-size: 1rem;
+    margin-left: 1rem;
+    color: #fff;
+  }
+  }
+

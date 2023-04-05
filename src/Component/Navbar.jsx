@@ -1,35 +1,22 @@
-import { ReactNode, useEffect, useState } from 'react';
-import mypic from '../images/mypic.png'
+
 import resume from '../images/Shoaib-Mansuri-Resume.pdf'
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Link,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
   useColorMode,
-  Icon,
+  
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, AddIcon, DownloadIcon, MoonIcon, SettingsIcon, SunIcon } from '@chakra-ui/icons';
-import Home from './Home';
-import styled from '@emotion/styled';
+import { HamburgerIcon, CloseIcon, DownloadIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import styles from './Css/Navbar.module.css'
 import { Link as Newlink } from 'react-scroll'
-import { color } from 'framer-motion';
-import About from './About';
-import Skills from './Skills';
-import Projects from './Projects';
-import Contact from './Contact';
+
+
 const Links = ['Home', 'About', 'Skills', 'Projects', 'Contact Me'];
 
 
@@ -55,7 +42,6 @@ export default function Navbar({ toggle, settoggle }) {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-
             <HStack
               cursor={'pointer'}
               as={'nav'}
@@ -139,7 +125,7 @@ export default function Navbar({ toggle, settoggle }) {
             <Stack spacing={0}>
 
             
-              <Newlink style={{ color: "white", margin: "15px, 15px," }} className='nav-link home' to="home" spy={true} smooth={true} offset={-500} duration={500}>
+              <Newlink style={{ color: "white", margin: "15px, 15px," }} className='nav-link home' to="home" spy={true} smooth={true} offset={-400} duration={500}>
                
                 <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
@@ -148,28 +134,28 @@ export default function Navbar({ toggle, settoggle }) {
                 </Button>
               </Newlink>
 
-              <Newlink style={{ color: "white" }} className="nav-link about" to="about" spy={true} smooth={true} offset={-500} duration={500}>
+              <Newlink style={{ color: "white" }} className="nav-link about" to="about" spy={true} smooth={true} offset={-400} duration={500}>
                 <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>
                   {Links[1]}
                 </Button>
               </Newlink>
-              <Newlink style={{ color: "white" }} className="nav-link skills" to="skills" spy={true} smooth={true} offset={-500} duration={500} >
+              <Newlink style={{ color: "white" }} className="nav-link skills" to="skills" spy={true} smooth={true} offset={-400} duration={500} >
                 <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>
                   {Links[2]}
                 </Button>
               </Newlink>
-              <Newlink style={{ color: "white" }} className='nav-link projects' to="projects" spy={true} smooth={true} offset={-500} duration={500}>
+              <Newlink style={{ color: "white" }} className='nav-link projects' to="projects" spy={true} smooth={true} offset={-400} duration={500}>
                 <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>
                   {Links[3]}
                 </Button>
               </Newlink>
-              <Newlink style={{ color: "white" }} className='nav-link contact' to="contact" spy={true} smooth={true} offset={-500} duration={500} >
+              <Newlink style={{ color: "white" }} className='nav-link contact' to="contact" spy={true} smooth={true} offset={-400} duration={500} >
                 <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>{Links[4]}

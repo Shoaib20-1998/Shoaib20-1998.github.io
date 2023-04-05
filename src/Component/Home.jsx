@@ -77,11 +77,11 @@ const DIV1 = styled.div`
     }
     .name-title,.name-title>h1{
         margin-top:20px;
-        font-size:35px ;
+        font-size:40px ;
     }
     .name-title,.name-title>h4{
         font-family: sans-serif;
-        font-size: 20px;
+        font-size: 25px;
     }
   }
     @media only screen and (min-width:426px) and (max-width: 600px){
@@ -91,30 +91,30 @@ const DIV1 = styled.div`
         width: 100%;
     }
     .name-title,.name-title>h1{
-        font-size:25px ;
+        font-size:30px ;
         margin-top:20px;
     }
     .name-title,.name-title>h4{
         font-family: sans-serif;
-        font-size: 15px;
+        font-size: 18px;
     }
     
     display: block;
     margin: 70px auto 0;
 
     }
-    @media only screen and (min-width: 325px) and (max-width: 425px){
+    @media only screen and (min-width: 100px) and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
     .imgdiv{
         width: 100%;
     }
     .name-title,.name-title>h1{
-        font-size:20px ;
+        font-size:25px ;
         margin-top:20px;
     }
     .name-title,.name-title>h4{
         font-family: sans-serif;
-        font-size: 10px;
+        font-size: 13px;
        
     }
     display: block;
@@ -144,24 +144,24 @@ img{
     /*Tablets [601px -> 1200px]*/
     margin-top: 0px;
     img{
-    width: 80px;   
+    width: 100px;   
     padding: 10px;
-     }
+    }
   }
     @media only screen and (min-width:426px) and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
 
     margin-top: 0px;
     img{
-    width: 70px;   
+    width: 100px;   
     padding: 10px;
-     }
     }
-    @media only screen and (min-width: 325px) and (max-width: 425px){
+    }
+    @media only screen and (min-width: 100px) and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
     margin-top: 0px;
     img{
-    width: 60px;   
+    width: 80px;   
     padding: 10px;
      }
     

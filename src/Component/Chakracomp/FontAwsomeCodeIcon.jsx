@@ -15,10 +15,10 @@ const ICON=styled.div`
 
   /* border:1px solid black; */
   margin:20px auto 20px;
-   width:160px;
+   width:130px;
   .iconstyle{
     color: #008080;
-    font-Size: 120px;
+    font-Size: 100px;
   }
    @media only screen and (min-width: 601px) and (max-width: 1200px){
    width:100px;
@@ -29,19 +29,19 @@ const ICON=styled.div`
    }
 
    @media only screen and (min-width:426px) and (max-width: 600px){
-    width:80px;
-    .iconstyle{
-    color: #008080;
-    font-Size: 60px;
-  }
-   }
-
-   @media only screen and (min-width: 325px) and (max-width: 425px){
-
     width:60px;
     .iconstyle{
     color: #008080;
-    font-Size: 40px;
+    font-Size: 45px;
+  }
+   }
+
+   @media only screen and (min-width: 50px) and (max-width: 425px){
+
+    width:40px;
+    .iconstyle{
+    color: #008080;
+    font-Size: 30px;
   }
    }
 `

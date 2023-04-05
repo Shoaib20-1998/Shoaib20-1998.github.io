@@ -43,53 +43,20 @@ function About() {
           <p><span>5+</span> Major Projects</p>
           <p><span>30+</span> Mini Project assignments </p>       
         </div>   
-       <FontAwsomeCodeIcon />
+       
       </div>           
+      <FontAwsomeCodeIcon />
     </DIV>
    
   )
 }
 
-const ICON=styled.div`
-
-  /* border:1px solid black; */
-  margin:20px auto 20px;
-   width:160px;
-  .iconstyle{
-    color: #008080;
-    font-Size: 120px;
-  }
-   @media only screen and (min-width: 601px) and (max-width: 1200px){
-   width:100px;
-    .iconstyle{
-    color: #008080;
-    font-Size: 80px;
-  }
-   }
-
-   @media only screen and (min-width:426px) and (max-width: 600px){
-    width:80px;
-    .iconstyle{
-    color: #008080;
-    font-Size: 60px;
-  }
-   }
-
-   @media only screen and (min-width: 325px) and (max-width: 425px){
-
-    width:60px;
-    .iconstyle{
-    color: #008080;
-    font-Size: 40px;
-  }
-   }
-`
 
 const DIV = styled.div`
     /* border:1px solid red; */
     text-align:center;
     width:80%;
-    margin: 70px auto 0;
+    margin: 5% auto 0;
     font-family: sans-serif;
 
     
@@ -119,7 +86,6 @@ const DIV = styled.div`
     }
     .aboutdetails{
       display: flex;
-      height: 180px;
       width: 80%;
       margin: 0 auto;
       justify-content: space-evenly;
@@ -145,9 +111,7 @@ const DIV = styled.div`
 
   @media only screen and (min-width: 601px) and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
-    .heading{
-      font-size:40px;
-    }
+
     .intro{
       display: block;
       width: 100%;
@@ -173,7 +137,6 @@ const DIV = styled.div`
       display: grid;
       grid-template-columns: repeat(2,1fr);
       gap:20px;
-      height: 180px;
       width: 80%;
       margin: 0 auto;
       justify-content: space-evenly;
@@ -203,9 +166,7 @@ const DIV = styled.div`
   }
     @media only screen and (min-width:426px) and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
-    .heading{
-      font-size:30px;
-    }
+   
     .intro{
       display: block;
       width: 100%;
@@ -232,7 +193,6 @@ const DIV = styled.div`
       display: grid;
       grid-template-columns: repeat(1,1fr);
       gap:20px;
-      height: 180px;
       width: 80%;
       margin: 0 auto;
       justify-content: space-evenly;
@@ -262,12 +222,8 @@ const DIV = styled.div`
     }
 
     }
-    @media only screen and (min-width: 325px) and (max-width: 425px){
+    @media only screen and (min-width: 50px) and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
-  .heading{
-      font-size:20px;
-      
-    }
     .intro{
       display: block;
       width: 100%;
@@ -284,7 +240,7 @@ const DIV = styled.div`
       margin: auto;
     }
     .profheading{
-      font-size: 19px;
+      font-size: 18px;
       margin: 10px auto;
       padding: 10px auto;
     }
@@ -292,7 +248,6 @@ const DIV = styled.div`
       display: grid;
       grid-template-columns: repeat(1,1fr);
       gap:10px;
-
       width: 80%;
       margin: 0 auto;
       justify-content: space-evenly;

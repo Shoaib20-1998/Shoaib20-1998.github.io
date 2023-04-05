@@ -11,9 +11,7 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import profile from '../../images/mypic.png'
-  import cover from '../../images/cover.png'
-  import whatsapp from '../../images/whatsapp.png'
-import { ViewIcon } from '@chakra-ui/icons';
+  import { ViewIcon } from '@chakra-ui/icons';
 
   export default function Profile() {
     return (
