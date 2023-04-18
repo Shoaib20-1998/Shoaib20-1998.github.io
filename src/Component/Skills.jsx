@@ -6,12 +6,12 @@ import FontAwsomeCodeIcon from './Chakracomp/FontAwsomeCodeIcon'
 
 function Skills() {
   return (
-    <DIV id="skills" className="skills-card" >
+    <DIV id="skills" >
+      
       
       <Headingofsection heading={"Tech Stack and Dev Tools"} />
       <SkillSection />
       <FontAwsomeCodeIcon />
-  
     </DIV>
   )
 }

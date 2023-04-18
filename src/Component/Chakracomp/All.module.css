@@ -84,13 +84,14 @@
   }
   .skillbar {
     background-color: teal;
-    height: 3.0rem;
+    height: 2.5rem;
   }
   
   .skillbar span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 1rem;
     color: #fff;
+
   }
   }
 

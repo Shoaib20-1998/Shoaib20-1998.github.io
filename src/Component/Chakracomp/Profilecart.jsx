@@ -17,13 +17,13 @@ import {
     return (
       <Center py={6}>
         <Box
-        //   maxW={'700px'}
           w={'320px'}
           bg={useColorModeValue('white', 'gray.800')}
           boxShadow={'2xl'}
           rounded={'md'}
           >
           <Flex justify={'center'} mt={-12}>
+          <span>
             <Avatar
               size={'xl'}
               className="home-img"
@@ -35,7 +35,7 @@ import {
                 border: '4px dotted teal',
               }}
             />
-        
+         </span>
           </Flex>
   
           <Box p={6}>      
@@ -54,7 +54,7 @@ import {
               </Stack>
             </Stack>
   
-          <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link">
+          <a id="resume-link-2" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link">
             <Button
             fontSize={["sm","md","lg"]}
               w={'full'}
@@ -67,7 +67,9 @@ import {
                 boxShadow: 'lg',
               }}
            
-              leftIcon={<ViewIcon />}>
+              leftIcon={<ViewIcon />}
+              id="resume-button-1"
+              >
              Resume 
             </Button>
             </a>  

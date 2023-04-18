@@ -25,6 +25,7 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "react-scrollama": "^2.3.2",
+    "react-slick": "^0.29.0",
     "react-typed": "^1.2.0",
     "styled-components": "^5.3.9",
     "web-vitals": "^2.1.4"

@@ -24,17 +24,6 @@ import typescript from '../../images/typescript.png'
 import chakraui from '../../images/chakraui.png'
 import materialui from '../../images/materialui.png'
 import vscode from '../../images/vscode.png'
-
-
-
-
-
-
-
-
-
-
-
 const skills = [
   { name: "React", level: 5, logo: react },
   { name: "HTML", level: 5, logo: html },
@@ -53,6 +42,7 @@ const skills = [
 ];
 const SkillSection = () => {
   return (
+    <div className="skills-card">
     <section className={styles.skillssection}>
       {skills.map((skill, index) => (
         <motion.div
@@ -70,6 +60,7 @@ const SkillSection = () => {
         </motion.div>
       ))}
     </section>
+    </div>
   );
 };
 

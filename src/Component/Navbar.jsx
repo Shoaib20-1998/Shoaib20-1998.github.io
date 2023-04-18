@@ -105,8 +105,8 @@ export default function Navbar({ toggle, settoggle }) {
           <Flex alignItems={'center'}>
 
 
-            <a className="nav-link resume" href={resume} download="Shoaib-Mansuri-Resume.pdf" >
-              <Button
+            <a id="resume-link-1" className="nav-link resume" href={resume} download="Shoaib-Mansuri-Resume.pdf" >
+              <Button id="resume-button-1"
                 borderRadius={"3xl"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}
