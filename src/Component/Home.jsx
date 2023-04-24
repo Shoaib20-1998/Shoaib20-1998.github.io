@@ -30,7 +30,7 @@ function Home() {
                     <a id="contact-github" href="https://github.com/Shoaib20-1998" target="_blank" rel="noopener"><img src={git} alt="github" /></a>
                     <a id="contact-phone" href="tel:+918003740674" target="_blank" rel="noopener"> <img src={call} alt="number" /> </a>
                     <a id="contact-linkedin" href="https://www.linkedin.com/in/shoaib-mansuri-7753b2218/" target="_blank" rel="noopener"> <img src={linkdin} alt="linkdin" /></a>
-                    <a id="contact-email" href="mailto:shoaibmansuri235@gmail.com" target="_blank" rel="noopener"><img src={gmail} alt="eamil" /></a>
+                    <a href="mailto:shoaibmansuri235@gmail.com" target="_blank" rel="noopener"><img src={gmail} alt="email" /></a>
                 </DIV2>              
                 <FontAwsomeCodeIcon />
             </div>

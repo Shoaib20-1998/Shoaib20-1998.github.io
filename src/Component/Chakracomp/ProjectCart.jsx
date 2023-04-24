@@ -15,8 +15,8 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
     return (
         <Center py={6}>
             <Box
-                w="xl"
-                h="auto"
+                w={['300px', 'md', 'lg', 'xl']}
+                h='auto'
                 rounded={'sm'}
                 my={5}
                 mx={[0, 5]}
@@ -25,7 +25,7 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                 borderColor="black"
                 textAlign={"left"}
                 boxShadow={useColorModeValue('8px 18px 0 rgb(26,32,44)', '8px 18px black')}>
-                <Box  p="2" h={'300px'} >
+                <Box  p="2" h='auto'>
                     <Img
                         src={
                           useColorModeValue(img,imgdark)
@@ -33,8 +33,8 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                          borderRadius="20px"
                         roundedTop={'sm'}
                         objectFit="cover"
-                        h="100%"
-                        w="98%"
+                        h={['200px', '250px', '280px', '280px']}
+                        w={['sm', 'md', 'lg', 'xl']}
                         alt={'be stylish'}
                         boxShadow= "rgba(0, 0, 0, 0.24) 0px 3px 8px"                     
                     />
@@ -45,7 +45,7 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                         bg="teal"
                         display={'inline-block'}
                         marginLeft={"2"}
-                        borderRadius={"xl"}
+                        borderRadius={['sm', 'md', 'lg', 'xl']}
                         key={item}
                         px={2}
                         py={1}
@@ -56,10 +56,10 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                            </Text>            
                     </Box>
                   )}  
-                    <Heading children="project-title"  marginLeft={"2"}  fontSize={'2xl'} noOfLines={1}>
+                    <Heading className="project-title"  marginLeft={"2"}  fontSize={['sm', 'md', 'lg', 'xl']} noOfLines={1}>
                         {heading}
                     </Heading>
-                    <Text className="project-description"  marginLeft={"2"} marginTop={"2"}  noOfLines={3}>
+                    <Text className="project-description"  fontSize={['11px', '17px', '20px', '20px']} marginLeft={"2"} marginTop={"2"}  noOfLines={3}>
                         {disc}
                     </Text>
                 </Box>
@@ -75,12 +75,12 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                         color={"white"}
                         w="full">
                         <a className="project-github-link" href={github} target='_blank'>
-                            <Text borderRadius="5px" padding={"5px 10px"} border={"3px dotted rgb(26,32,44) "}  marginLeft={"2"} fontSize={'md'} fontWeight={'semibold'}>
+                            <Text fontSize={['13px', '16px', '20px', '20px']} borderRadius="5px" padding={"5px 10px"} border={"3px dotted rgb(26,32,44) "}  marginLeft={"2"}  fontWeight={'semibold'}>
                                 Github
                             </Text>
                         </a>
                         <a className="project-deployed-link" href={deploye} target='_blank' style={{display:"flex",backgroundColor:"rgb(26,32,44)",borderRadius:"5px"}}>
-                           <div style={{marginRight:"5px" , padding:"7px 11px"}}>Live</div>
+                           <Box fontSize={['13px', '16px', '20px', '20px']} style={{marginRight:"5px" , padding:"7px 11px"}}>Live</Box>
                         <BsArrowUpRight />
                         </a>
                         
@@ -94,9 +94,9 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                         cursor="pointer"
                         onClick={() => setLiked(!liked)}>
                         {liked ? (
-                            <BsHeartFill fill="red" fontSize={'24px'} />
+                            <BsHeartFill fill="red" fontSize={['13px', '16px', '20px', '20px']} />
                         ) : (
-                            <BsHeart fontSize={'24px'} />
+                            <BsHeart fontSize={['13px', '16px', '20px', '20px']}/>
                         )}
                     </Flex>
                 </HStack>

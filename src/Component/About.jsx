@@ -6,48 +6,46 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import Headingofsection from './Chakracomp/Headingofsection'
 import FontAwsomeCodeIcon from './Chakracomp/FontAwsomeCodeIcon'
+
 function About() {
   return (
-    
-    <DIV  id="about" className="about section" >
 
-     <Headingofsection heading={"About Me"} />
+    <DIV id="about" className="about section" >
+      <Headingofsection heading={"About Me"} />
       <div data-aos="zoom-in" className='intro'  >
         <div className='profile'>
           <Profile />
         </div>
         <div className='description'>
-          <h1 id="user-detail-intro" className='profheading'> Professional Summary :</h1>
-          <p align="justify">Full Stack Web Developer Specialized in Mern Stack.
-            Skilled in developing functional and responsive web applications. 1000+ hours of coding experience and top of that build some Projects
-            With a strong foundation in programming languages such as HTML, CSS, JavaScript, and MERN </p>
+          <h1 className='profheading'> Professional Summary :</h1>
+          <p id="user-detail-intro" align="justify">I have strong skills in JavaScript, Node.js, React, MongoDB, and Express. I am eager to collaborate with other developers and continuously learn new skills and emerging technologies. I have completed several projects that showcase my ability to create robust, scalable, and user-friendly web applications. Additionally, I am a quick learner and enjoy tackling challenges that come with working in a dynamic and fast-paced environment. </p>
         </div>
       </div>
-      <div  className='aboutdetails'>
-        <div className='subaboutdetails' data-aos="fade-right">          
+      <div className='aboutdetails'>
+        <div className='subaboutdetails' data-aos="fade-right">
           <p><span>1000+</span> Hours </p>
           <p> of Coding Experience</p>
         </div>
         <div className='subaboutdetails' data-aos="fade-left" >
-          <img src="" alt="" />    
+          <img src="" alt="" />
           <p>Solved <span>400+</span></p>
           <p>Data Structure & Algoritham Problems</p>
         </div>
-        <div className='subaboutdetails'  data-aos="fade-right">
-          <img src="" alt="" />        
+        <div className='subaboutdetails' data-aos="fade-right">
+          <img src="" alt="" />
           <p><span>100+</span> Hours </p>
           <p>of Soft Skills Development</p>
         </div>
-        <div className='subaboutdetails'  data-aos="fade-left">
+        <div className='subaboutdetails' data-aos="fade-left">
           <img src="" alt="" />
           <p><span>5+</span> Major Projects</p>
-          <p><span>30+</span> Mini Project assignments </p>       
-        </div>   
-       
-      </div>           
+          <p><span>30+</span> Mini Project assignments </p>
+        </div>
+
+      </div>
       <FontAwsomeCodeIcon />
     </DIV>
-   
+
   )
 }
 

@@ -10,6 +10,7 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
+  Link,
   
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, DownloadIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
@@ -105,15 +106,23 @@ export default function Navbar({ toggle, settoggle }) {
           <Flex alignItems={'center'}>
 
 
-            <a id="resume-link-1" className="nav-link resume" href={resume} download="Shoaib-Mansuri-Resume.pdf" >
-              <Button id="resume-button-1"
-                borderRadius={"3xl"} bg={"teal.500"} color={"white"} _hover={{
+            <Link 
+            id="resume-link-1"  
+            className="nav-link resume" 
+            href={resume} 
+            download="Shoaib-Mansuri-Resume.pdf" >
+              <Button   
+                id="resume-button-1"       
+                borderRadius={"3xl"} 
+                bg={"teal.500"} 
+                color={"white"} 
+                _hover={{
                   bg: "teal.500"
                 }}
                 leftIcon={<DownloadIcon />}>
                 Resume
               </Button>
-            </a>
+            </Link>
             <Button bg={"node"} _hover={{ bg: "none" }} onClick={toggleColorMode}>
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>

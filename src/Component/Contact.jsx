@@ -1,30 +1,12 @@
 import styled from '@emotion/styled'
 import React from 'react'
+import ContactComp from './Chakracomp/Contactcomp'
 
 function Contact() {
   return (
-    <DIV id="contact">Contact
-    <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-           <h1>home</h1>
-        </DIV>
+    <DIV id="contact">
+    <ContactComp />
+    </DIV>
     )
 }
 
