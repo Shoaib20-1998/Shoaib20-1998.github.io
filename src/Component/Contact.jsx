@@ -5,7 +5,7 @@ import ContactComp from './Chakracomp/Contactcomp'
 function Contact() {
   return (
     <DIV id="contact">
-    <ContactComp />
+    {/* <ContactComp /> */}
     </DIV>
     )
 }

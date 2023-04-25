@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     position:fixed;  
-    z-index:1; /*Add this*/
+    z-index:1; 
     width:100%;
     text-align:center;
     vertical-align:middle;
@@ -23,3 +23,18 @@
   .navbar a:hover {
     color: black;
   }
+
+@media only screen and (min-width: 601px) and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+  
+}
+
+@media only screen and (min-width:426px) and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+  
+   
+}
+  @media only screen and (min-width: 100px) and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+  
+}
