@@ -10,8 +10,8 @@ import {
   Link
 } from '@chakra-ui/react';
 import profile from '../../images/mypic.png'
-import {ViewIcon } from '@chakra-ui/icons';
-// import resume from '../../images/Shoaib-Mansuri-Resume.pdf'
+import { ViewIcon } from '@chakra-ui/icons';
+import resume from '../../images/Shoaib-Mansuri-Resume.pdf'
 export default function Profile() {
   return (
     <Center py={6}>
@@ -28,7 +28,7 @@ export default function Profile() {
             css={{
               border: '4px dotted teal',
             }}
-            
+
             src={profile}
             w={{ base: '100px', md: '140px', lg: '170px' }}
             className="home-img"
@@ -51,32 +51,35 @@ export default function Profile() {
             </Stack>
           </Stack>
 
-          <Link
-            id="resume-link-2"
-            target="_blank"
-            rel="noopener">
-            <Button
-              id="resume-button-2"
-              onClick={()=>window.open(
-                "https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link"
-                ,"_blank"
-                )}
-              fontSize={["sm", "md", "lg"]}
-              w={'full'}
-              mt={8}
-              bg={"teal"}
-              color={'white'}
-              rounded={'md'}
-              _hover={{
-                transform: 'translateY(-2px)',
-                boxShadow: 'lg',
-              }}
-              leftIcon={<ViewIcon />}>
+
+          <Button
+            id="resume-button-2"
+            onClick={() => window.open(
+              "https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link"
+              , "_blank"
+            )}
+            fontSize={["sm", "md", "lg"]}
+            w={'full'}
+            mt={8}
+            bg={"teal"}
+            color={'white'}
+            rounded={'md'}
+            _hover={{
+              transform: 'translateY(-2px)',
+              boxShadow: 'lg',
+            }}
+            leftIcon={<ViewIcon />}>
+            <Link
+              id="resume-link-2"
+              target="_blank"
+              rel="noopener"
+              href="https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link">
               Resume
-            </Button>
-          </Link>
+            </Link>
+          </Button>
+
         </Box>
       </Box>
-    </Center>
+    </Center >
   );
 }

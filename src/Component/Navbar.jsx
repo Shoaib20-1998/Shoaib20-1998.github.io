@@ -123,7 +123,8 @@ export default function Navbar({ toggle, settoggle }) {
                 Resume
               </Button>
             </Link>
-            <Button bg={"node"} _hover={{ bg: "none" }} onClick={toggleColorMode}>
+            
+            <Button bg={"node"} _hover={{ bg: "none" }}  onClick={toggleColorMode} >
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Flex>

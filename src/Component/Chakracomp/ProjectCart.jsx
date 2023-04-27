@@ -15,9 +15,9 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
     return (
         <Center py={6}>
             <Box
-                w={['300px', 'md', 'lg', 'xl']}
+                w={['290px', 'md', 'lg', 'xl']}
                 h='auto'
-                rounded={'sm'}
+                rounded={'50px'}
                 my={5}
                 mx={[0, 5]}
                 overflow={'hidden'}

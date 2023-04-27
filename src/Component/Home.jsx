@@ -27,7 +27,7 @@ function Home() {
                     </div>
                 </DIV1>
                 <DIV2 className='sociallogo'>
-                    <a id="contact-github" href="https://github.com/Shoaib20-1998" target="_blank" rel="noopener"><img src={git} alt="github" /></a>
+                    <a id="contact-github"  href="https://github.com/Shoaib20-1998" target="_blank" rel="noopener"><img src={git} alt="github" /></a>
                     <a id="contact-phone" href="tel:+918003740674" target="_blank" rel="noopener"> <img src={call} alt="number" /> </a>
                     <a id="contact-linkedin" href="https://www.linkedin.com/in/shoaib-mansuri-7753b2218/" target="_blank" rel="noopener"> <img src={linkdin} alt="linkdin" /></a>
                     <a href="mailto:shoaibmansuri235@gmail.com" target="_blank" rel="noopener"><img src={gmail} alt="email" /></a>
@@ -49,6 +49,9 @@ const DIV1 = styled.div`
     margin: 100px auto 0;
     text-align:"center";
     padding-top: 45px;
+
+
+    
     .imgdiv{
         width: 50%;
         pointer-events: none;

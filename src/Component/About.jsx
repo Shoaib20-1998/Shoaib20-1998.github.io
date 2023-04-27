@@ -12,7 +12,7 @@ function About() {
 
     <DIV id="about" className="about section" >
       <Headingofsection heading={"About Me"} />
-      <div data-aos="zoom-in" className='intro'  >
+      <div data-aos="zoom-in" className='intro' data-aos-duration="2000"  >
         <div className='profile'>
           <Profile />
         </div>
@@ -22,21 +22,21 @@ function About() {
         </div>
       </div>
       <div className='aboutdetails'>
-        <div className='subaboutdetails' data-aos="fade-right">
+        <div className='subaboutdetails' data-aos-duration="1000" data-aos="fade-right">
           <p><span>1000+</span> Hours </p>
           <p> of Coding Experience</p>
         </div>
-        <div className='subaboutdetails' data-aos="fade-left" >
+        <div className='subaboutdetails' data-aos-duration="1000" data-aos="fade-left" >
           <img src="" alt="" />
           <p>Solved <span>400+</span></p>
           <p>Data Structure & Algoritham Problems</p>
         </div>
-        <div className='subaboutdetails' data-aos="fade-right">
+        <div className='subaboutdetails'data-aos-duration="1000" data-aos="fade-right">
           <img src="" alt="" />
           <p><span>100+</span> Hours </p>
           <p>of Soft Skills Development</p>
         </div>
-        <div className='subaboutdetails' data-aos="fade-left">
+        <div className='subaboutdetails' data-aos-duration="1000" data-aos="fade-left">
           <img src="" alt="" />
           <p><span>5+</span> Major Projects</p>
           <p><span>30+</span> Mini Project assignments </p>
@@ -57,6 +57,9 @@ const DIV = styled.div`
     margin: 5% auto 0;
     font-family: sans-serif;
 
+ 
+      
+    
     
     .intro{
       display: flex;
@@ -89,6 +92,7 @@ const DIV = styled.div`
       justify-content: space-evenly;
       text-align:center;
       align-items: center;
+      
     }
     .subaboutdetails{
       background-color: teal;
@@ -98,6 +102,7 @@ const DIV = styled.div`
       color:white;
       font-family: sans-serif;
     }
+    
     .closingtagdiv{
       width: 80%;
       text-align:center;

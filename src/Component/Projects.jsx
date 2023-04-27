@@ -19,16 +19,16 @@ function Projects() {
 
       <Headingofsection heading={"Projects"} />
       <div className='projectcard'>
-        <div data-aos="fade-up-right">
+        <div data-aos="fade-up-right" data-aos-duration="2000">
           <ProjectCart img={medzlight} imgdark={medzdark} title={["React", "Styled-Component", "CSS", "Javascript", "Chakra-UI", "Sweet Alert"]} heading={"Tata1mg - MedZ+"} disc={"A Collaberative Project : MedZ+ is a user-friendly online platform where customers can easily purchase prescription and over-the-counter medicines, health and wellness products, and medical supplies"} deploye={"https://bestylish.vercel.app/shirts"} github={"https://github.com/Shoaib20-1998/general-zebra-503"} />
         </div>
-        <div data-aos="fade-up-left">
+        <div data-aos="fade-up-left" data-aos-duration="2000">
           <ProjectCart img={bestylish} imgdark={dark} title={["React", "CSS", "Javascript", "HTML", "Chakra-UI", "Sweet Alert", "Ant-Design"]} heading={"Life Style - Be Stylish"} disc={"An Individual Project : Lifestyle is India's leading fashion destination for the latest trends. Lifestyle brings multiple categories including men, women and kids’ apparel and footwear etc"} deploye={"https://bestylish.vercel.app/shirts"} github={"https://github.com/Shoaib20-1998/general-zebra-503"} />
         </div>
-        <div data-aos="fade-up-right">
+        <div data-aos="fade-up-right" data-aos-duration="2000">
           <ProjectCart img={gadgetlight} imgdark={gadgetdark} title={["React", "CSS", "Javascript", "HTML", "Chakra-UI", "Gifhy", "Ant-Design"]} heading={"360'Gadgets - Gadgets++"} disc={"An Individual Project : Gadget Review is a lifestyle website focusing on gadget news. The mission of the site is to provide honest reviews of products that help consumers make informed choices."} deploye={"https://bestylish.vercel.app/shirts"} github={"https://github.com/Shoaib20-1998/general-zebra-503"} />
         </div>
-        <div data-aos="fade-up-left">
+        <div data-aos="fade-up-left" data-aos-duration="2000">
           <ProjectCart img={beautifylight} imgdark={beautifydark} title={["HTML", "CSS", "Javascript", "Sweet Alert", "Php", "Bootstrap"]} heading={"Nykaa - Beautify"} disc={"A Collabrative Project : Nykaa is an E-Commerce website for beauty wellness and cosmetic products. It sells beauty, wellness and fashion products across the world."} deploye={"https://bestylish.vercel.app/shirts"} github={"https://github.com/Shoaib20-1998/general-zebra-503"} />
         </div>
       </div>
@@ -36,21 +36,18 @@ function Projects() {
       {/* <GitHubCalendar colorScheme="light" username="shoaib20-1998" /> */}
       <FontAwsomeCodeIcon />
 
-      <Headingofsection heading={"GitHub Calender"} />
+      <Headingofsection heading={"GitHub Calender And Stats"} />
 
       <div st id="gitcalender" className="react-activity-calendar">
         <img src=" https://ghchart.rshah.org/008080/shoaib20-1998" alt="" />
       </div>
-      <FontAwsomeCodeIcon />
 
-      <Headingofsection heading={"GitHub Streak Stats"} />
+    
 
       <div className='git'>
         <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=shoaib20-1998&theme=radical&hide_border=true&border_radius=4.5&locale=en&date_format=&mode=daily&exclude_days=Sun%2CSat&type=svg&card_width=495&background-type=gradient&properties=currStreakNum" alt="" />
       </div>
-
-      <FontAwsomeCodeIcon />
-      <Headingofsection heading={"GitHub Top Languages And Stats"} />
+      
       <div className='git'id='statslang'>
         <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shoaib20-1998&theme=radical" alt="" />
         <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=shoaib20-1998&show_icons=true&theme=radical" alt="" />
@@ -86,7 +83,8 @@ const DIV = styled.div`
     }
     .git{
       width: 100%;
-      
+      margin: 30px auto;
+      padding: 20px;
     }
     
     img{
@@ -108,7 +106,12 @@ const DIV = styled.div`
       height: 150px;
       display: block;
     }
-   
+    .git{
+      width: 100%;
+      margin: 25px auto;
+      padding: 15px;
+    }
+    
   }
     @media only screen and (min-width:426px) and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
@@ -117,6 +120,12 @@ const DIV = styled.div`
       grid-template-columns: repeat(1,1fr);
       margin: auto;
     }
+    .git{
+      width: 100%;
+      margin: 20px auto;
+      padding: 10px;
+    }
+    
     
     img{
       width: 100%;
@@ -131,6 +140,12 @@ const DIV = styled.div`
       grid-template-columns: repeat(1,1fr);
       margin: auto;
     }
+    .git{
+      width: 100%;
+      margin: 20px auto;
+      padding: 10px;
+    }
+    
 
     img{
       width: 100%;
