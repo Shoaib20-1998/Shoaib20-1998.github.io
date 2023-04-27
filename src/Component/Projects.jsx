@@ -11,7 +11,7 @@ import gadgetlight from '../images/gadgetlight.png'
 import gadgetdark from '../images/gadgetdark.png'
 import medzdark from '../images/medzdark.png'
 import medzlight from '../images/medzlight.png'
-import GitHubCalendar from 'react-github-calendar';
+// import GitHubCalendar from 'react-github-calendar';
 import FontAwsomeCodeIcon from './Chakracomp/FontAwsomeCodeIcon'
 function Projects() {
   return (
@@ -50,19 +50,12 @@ function Projects() {
       </div>
 
       <FontAwsomeCodeIcon />
-      <Headingofsection heading={"GitHub Top Languages"} />
-      <div className='git'>
+      <Headingofsection heading={"GitHub Top Languages And Stats"} />
+      <div className='git'id='statslang'>
         <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shoaib20-1998&theme=radical" alt="" />
-      </div>
-      <FontAwsomeCodeIcon />
-
-      <Headingofsection heading={"GitHub Stats Card"} />
-
-      <div className='git'>
         <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=shoaib20-1998&show_icons=true&theme=radical" alt="" />
       </div>
       <FontAwsomeCodeIcon />
-
     </DIV>
   )
 }
@@ -72,38 +65,36 @@ const DIV = styled.div`
     width:80%;
     margin: 5% auto 0;
     font-family: sans-serif;
-
     .projectcard{
       display: grid;
       grid-template-columns: repeat(2,1fr);
     }
-
     #gitcalender{
-
-      border: 2px dotted teal;
       transition: transform .2s;
-      padding: 12px;
     }
     #gitcalender:hover{
       transform: scale(1.05); 
 
     }
-    .git:hover{
+    #statslang{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    img:hover{
       transform: scale(1.05); 
 
     }
     .git{
       width: 100%;
-      border: 2px dotted teal;
-      padding: 12px;
-      transition: transform .2s;
-
+      
     }
+    
     img{
       width: 80%;
       height: 300px;
       display: block;
       margin: auto;
+      transition: transform .2s;
     }
     @media only screen and (min-width: 601px) and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
@@ -114,7 +105,7 @@ const DIV = styled.div`
     }
     img{
       width: 100%;
-      height: 200px;
+      height: 150px;
       display: block;
     }
    
@@ -129,7 +120,7 @@ const DIV = styled.div`
     
     img{
       width: 100%;
-      height: 150px;
+      height: 100px;
       display: block;
     }
     }
@@ -143,7 +134,7 @@ const DIV = styled.div`
 
     img{
       width: 100%;
-      height: 150px;
+      height: 100px;
       display: block;
     }
     

@@ -1,18 +1,20 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import ContactComp from './Chakracomp/Contactcomp'
+import Headingofsection from './Chakracomp/Headingofsection'
 
 function Contact() {
   return (
     <DIV id="contact">
-    {/* <ContactComp /> */}
+      <Headingofsection heading={"Contact"} />
+    <ContactComp />
     </DIV>
     )
 }
 
 const DIV=styled.div`
-    border:1px solid black;
     width:80%;
+    text-align:center;
     margin: 100px auto 0;
 `
 
