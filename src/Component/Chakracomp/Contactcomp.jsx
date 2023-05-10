@@ -464,8 +464,8 @@ export default function Contactcomp() {
                     </FormControl>
                     <Button
                       variant={'solid'}
-                      bgColor={colorMode === 'light' ? '#454360' : '#cdcdff'}
-                      color={colorMode === 'light' ? '#cdcdff' : '#454360'}
+                     bg={'teal'}
+                     color={"white"}
                       fontSize='md'
                       _hover={{}}
                       type="submit"
