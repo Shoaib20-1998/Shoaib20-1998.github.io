@@ -260,10 +260,10 @@ import { AiFillPhone } from 'react-icons/ai';
 import { FaLinkedin } from 'react-icons/fa';
 import { MdEmail, MdOutlineEmail } from 'react-icons/md';
 // import { CONFETTI_DARK, CONFETTI_LIGHT } from '../bg';
-// import { useForm, ValidationError } from '@formspree/react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function Contactcomp() {
-  // const [state, handleSubmit] = useFormAction("xrgvajqr");
+ const [state, handleSubmit] = useForm("moqzrzqy");
   const { colorMode } = useColorMode();
   const { hasCopied, onCopy } = useClipboard('shoaibmansuri235@gmail.com');
   const [name, setName] = useState("")
@@ -413,7 +413,7 @@ export default function Contactcomp() {
                 color={useColorModeValue('white', 'gray.700')}
                 shadow="base"
               >
-                <form >
+              <form onSubmit={handleSubmit}>
                   <VStack spacing={5}>
                     <FormControl isRequired>
                       <FormLabel>Name</FormLabel>
@@ -439,7 +439,11 @@ export default function Contactcomp() {
                           onChange={(e) => setEmail(e.target.value)}
                           value={email}
                         />
-                       
+                        <ValidationError
+                          prefix="Email"
+                          field="email"
+                          errors={state.errors}
+                        />
                       </InputGroup>
                     </FormControl>
                     <FormControl isRequired>
@@ -452,32 +456,25 @@ export default function Contactcomp() {
                         value={msg}
                         onChange={(e) => setMsg(e.target.value)}
                       />
-                     
+                      <ValidationError
+                        prefix="Message"
+                        field="message"
+                        errors={state.errors}
+                      />
                     </FormControl>
                     <Button
                       variant={'solid'}
-                      bgColor={colorMode === 'light' ? '#008080' : '#008080'}
-                      color={colorMode === 'light' ? '#ffffff' : '#ffffff'}
+                      bgColor={colorMode === 'light' ? '#454360' : '#cdcdff'}
+                      color={colorMode === 'light' ? '#cdcdff' : '#454360'}
                       fontSize='md'
                       _hover={{}}
                       type="submit"
-                     
+                      disabled={state.submitting}
                       // isFullWidth
                       onClick={handleSendbtn}
                     >
                       Send Message
                     </Button>
-                    <Button
-                          size="md"
-                          height="48px"
-                          width="330px"
-                          variant="ghost"
-                          // color="#DCE2FF"
-                          bg={'#1A202C'}
-                          color='#1A202C'
-                          id="contact-email">
-                          shoaibmansuri235@gmail.com
-                      </Button>
                   </VStack>
                 </form>
               </Box>
