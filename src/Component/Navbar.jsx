@@ -123,8 +123,8 @@ export default function Navbar({ toggle, settoggle }) {
                 Resume
               </Button>
             </Link>
-            
-            <Button bg={"node"} _hover={{ bg: "none" }}  onClick={toggleColorMode} >
+            {/*  */}
+            <Button bg={"node"} _hover={{ bg: "none" }} onClick={toggleColorMode}>
               {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
             </Button>
           </Flex>
@@ -132,18 +132,14 @@ export default function Navbar({ toggle, settoggle }) {
 
         {isOpen ? (
           <Box pb={0} display={{ md: 'none' }}>
-            <Stack spacing={0}>
-
-            
-              <Newlink style={{ color: "white", margin: "15px, 15px," }} className='nav-link home' to="home" spy={true} smooth={true} offset={-400} duration={500}>
-               
+            <Stack spacing={0}>          
+              <Newlink style={{ color: "white", margin: "15px, 15px," }} className='nav-link home' to="home" spy={true} smooth={true} offset={-400} duration={500}>            
                 <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"
                 }}>
                   {Links[0]}
                 </Button>
               </Newlink>
-
               <Newlink style={{ color: "white" }} className="nav-link about" to="about" spy={true} smooth={true} offset={-400} duration={500}>
                 <Button w={"200px"} display={"block"} bg={"teal.500"} color={"white"} _hover={{
                   bg: "teal.500"

@@ -8,20 +8,20 @@ function Contact() {
   return (
     <DIV id="contact">
       <Headingofsection heading={"Contact"} />
-    <ContactComp />
-    <FontAwsomeCodeIcon />
+      <ContactComp />
+      <FontAwsomeCodeIcon />
 
     </DIV>
-    )
+  )
 }
 
-const DIV=styled.div`
+const DIV = styled.div`
     width:80%;
     text-align:center;
     margin: 100px auto 0;
 `
 
-  
+
 
 
 export default Contact

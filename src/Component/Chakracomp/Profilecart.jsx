@@ -10,7 +10,7 @@ import {
   Link
 } from '@chakra-ui/react';
 import profile from '../../images/mypic.png'
-import { ViewIcon } from '@chakra-ui/icons';
+import { DownloadIcon, ViewIcon } from '@chakra-ui/icons';
 import resume from '../../images/Shoaib-Mansuri-Resume.pdf'
 export default function Profile() {
   return (
@@ -52,13 +52,9 @@ export default function Profile() {
           </Stack>
 
 
-          <Button
-            id="resume-button-2"
-            onClick={() => window.open(
-              "https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link"
-              , "_blank"
-            )}
+          {/* <Button
             fontSize={["sm", "md", "lg"]}
+            download="Shoaib-Mansuri-Resume.pdf" 
             w={'full'}
             mt={8}
             bg={"teal"}
@@ -75,8 +71,39 @@ export default function Profile() {
               rel="noopener"
               href="https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link">
               Resume
+            </Link> */}
+          <Button
+            id="resume-button-2"
+            fontSize={["sm", "md", "lg"]}
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link",
+                "_blank"
+              );
+            }}
+            
+            rightIcon={<DownloadIcon />}
+            w={'full'}
+            mt={8}
+            bg={"teal"}
+            color={'white'}
+            rounded={'md'}
+            _hover={{
+              transform: 'translateY(-2px)',
+              boxShadow: 'lg',
+            }}
+          >
+            <Link
+              id="resume-link-2"
+              download={resume}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Resume
             </Link>
           </Button>
+
+          {/* </Button> */}
 
         </Box>
       </Box>
