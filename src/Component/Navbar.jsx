@@ -119,7 +119,14 @@ export default function Navbar({ toggle, settoggle }) {
                 _hover={{
                   bg: "teal.500"
                 }}
-                leftIcon={<DownloadIcon />}>
+                leftIcon={<DownloadIcon />}
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1JoDW9yn8t8igRx9Jj9z5QeWwhpp0CMDW/view?usp=share_link",
+                    "_blank"
+                  );
+                }}               
+                >
                 Resume
               </Button>
             </Link>

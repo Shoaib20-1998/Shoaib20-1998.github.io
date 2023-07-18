@@ -218,6 +218,18 @@
 //                     >
 //                       Send Message
 //                     </Button>
+
+                    // <Button
+                    //       size="md"
+                    //       height="48px"
+                    //       width="330px"
+                    //       variant="ghost"
+                    //       // color="#DCE2FF"
+                    //       bg={'#1A202C'}
+                    //       color='#1A202C'
+                    //       id="contact-email">
+                    //       shoaibmansuri235@gmail.com
+                    //   </Button>
 //                   </VStack>
 //                 </form>
 //               </Box>
@@ -416,25 +428,27 @@ export default function Contactcomp() {
               <form onSubmit={handleSubmit}>
                   <VStack spacing={5}>
                     <FormControl isRequired>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel color={'white'}>Name</FormLabel>
                       <InputGroup>
                         <InputLeftElement children={<BsPerson />} />
                         <Input
                           type="text"
                           name="name"
                           placeholder="Your Name"
+                          color={'white'}
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                         />
                       </InputGroup>
                     </FormControl>
                     <FormControl isRequired>
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel color={'white'}>Email</FormLabel>
                       <InputGroup>
                         <InputLeftElement children={<MdOutlineEmail />} />
                         <Input
                           type="email"
                           name="email"
+                          color={'white'}
                           placeholder="Your Email"
                           onChange={(e) => setEmail(e.target.value)}
                           value={email}
@@ -447,10 +461,11 @@ export default function Contactcomp() {
                       </InputGroup>
                     </FormControl>
                     <FormControl isRequired>
-                      <FormLabel>Message</FormLabel>
+                      <FormLabel color={'white'}>Message</FormLabel>
                       <Textarea
                         name="message"
                         placeholder="Your Message"
+                        color={'white'}
                         rows={6}
                         resize="none"
                         value={msg}
@@ -475,6 +490,17 @@ export default function Contactcomp() {
                     >
                       Send Message
                     </Button>
+                    <Button
+                          size="md"
+                          height="48px"
+                          width="330px"
+                          variant="ghost"
+                          // color="#DCE2FF"
+                          bg={'#1A202C'}
+                          color='#1A202C'
+                          id="contact-email">
+                          shoaibmansuri235@gmail.com
+                      </Button>
                   </VStack>
                 </form>
               </Box>

@@ -46,7 +46,7 @@ const DIV1 = styled.div`
     justify-content: space-evenly;
     align-items: center;
     width:80%;
-    margin: 100px auto 0;
+    margin: 50px auto 100px;
     text-align:"center";
     padding-top: 45px;
 
@@ -73,7 +73,6 @@ const DIV1 = styled.div`
 
     @media only screen and (min-width: 601px) and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
-   
     display: block;
     .imgdiv{
         width: 100%;
@@ -89,7 +88,6 @@ const DIV1 = styled.div`
   }
     @media only screen and (min-width:426px) and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
-
     .imgdiv{
         width: 100%;
     }
@@ -103,11 +101,12 @@ const DIV1 = styled.div`
     }
     
     display: block;
-    margin: 70px auto 0;
+    margin: 20px auto 0;
 
     }
     @media only screen and (min-width: 100px) and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
+    
     .imgdiv{
         width: 100%;
     }
@@ -121,7 +120,7 @@ const DIV1 = styled.div`
        
     }
     display: block;
-    margin: 70px auto 0;
+    margin: 10px auto 0;
     }
 
     

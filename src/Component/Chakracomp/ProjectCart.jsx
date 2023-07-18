@@ -15,7 +15,7 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
     return (
         <Center py={6}>
             <Box
-                w={['290px', 'md', 'lg', 'xl']}
+                w={['290px', 'md', 'md', 'md']}
                 h='auto'
                 rounded={'50px'}
                 my={5}
@@ -33,8 +33,8 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                          borderRadius="20px"
                         roundedTop={'sm'}
                         objectFit="cover"
-                        h={['200px', '250px', '280px', '280px']}
-                        w={['sm', 'md', 'lg', 'xl']}
+                        h={['200px', '250px', '250px', '250px']}
+                        w={['sm', 'md', 'md', 'md']}
                         alt={'be stylish'}
                         boxShadow= "rgba(0, 0, 0, 0.24) 0px 3px 8px"                     
                     />
@@ -45,7 +45,7 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                         bg="teal"
                         display={'inline-block'}
                         marginLeft={"2"}
-                        borderRadius={['sm', 'md', 'lg', 'xl']}
+                        borderRadius={['sm', 'md', 'md', 'md']}
                         key={item}
                         px={2}
                         py={1}
@@ -56,7 +56,7 @@ export default function ProjectCart({ title,imgdark, heading, disc, deploye, git
                            </Text>            
                     </Box>
                   )}  
-                    <Heading className="project-title"  marginLeft={"2"}  fontSize={['sm', 'md', 'lg', 'xl']} noOfLines={1}>
+                    <Heading className="project-title"  marginLeft={"2"}  fontSize={['sm', 'md', 'md', 'md']} noOfLines={1}>
                         {heading}
                     </Heading>
                     <Text className="project-description"  fontSize={['11px', '17px', '20px', '20px']} marginLeft={"2"} marginTop={"2"}  noOfLines={3}>

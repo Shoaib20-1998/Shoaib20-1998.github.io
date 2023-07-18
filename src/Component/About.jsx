@@ -29,7 +29,7 @@ function About() {
         <div className='subaboutdetails' data-aos-duration="1000" data-aos="fade-left" >
           <img src="" alt="" />
           <p>Solved <span>400+</span></p>
-          <p>Data Structure & Algoritham Problems</p>
+          <p>Data Structure Problems</p>
         </div>
         <div className='subaboutdetails'data-aos-duration="1000" data-aos="fade-right">
           <img src="" alt="" />
@@ -38,8 +38,8 @@ function About() {
         </div>
         <div className='subaboutdetails' data-aos-duration="1000" data-aos="fade-left">
           <img src="" alt="" />
-          <p><span>5+</span> Major Projects</p>
-          <p><span>30+</span> Mini Project assignments </p>
+          <p><span>6+</span>Major Projects</p>
+          <p><span>30+</span>Small Project Assignment </p>
         </div>
 
       </div>

@@ -1,10 +1,8 @@
 .navbar {
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    position:fixed;  
-    z-index:1; 
+    position: sticky;
+    top: 0px;
+    z-index:100; 
     width:100%;
     text-align:center;
     vertical-align:middle;

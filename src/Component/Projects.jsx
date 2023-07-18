@@ -29,7 +29,7 @@ function Projects() {
           <ProjectCart img={gadgetlight} imgdark={gadgetdark} title={["React", "CSS", "Javascript", "HTML", "Chakra-UI", "Gifhy", "Ant-Design"]} heading={"360'Gadgets - Gadgets++"} disc={"An Individual Project : Gadget Review is a lifestyle website focusing on gadget news. The mission of the site is to provide honest reviews of products that help consumers make informed choices."} deploye={"https://gadgets-rho.vercel.app/"} github={"https://github.com/Shoaib20-1998/Gadgets"} />
         </div>
         <div data-aos="fade-up-left" data-aos-duration="2000">
-          <ProjectCart img={beautifylight} imgdark={beautifydark} title={["HTML", "CSS", "Javascript", "Sweet Alert", "Php", "Bootstrap"]} heading={"Nykaa - Beautify"} disc={"A Collabrative Project : Nykaa is an E-Commerce website for beauty wellness and cosmetic products. It sells beauty, wellness and fashion products across the world."} deploye={"https://beautiffy.netlify.app/"} github={"https://github.com/Shoaib20-1998/Beautify"} />
+          <ProjectCart img={beautifylight} imgdark={beautifydark} title={["HTML", "CSS", "Javascript", "Sweet Alert", "Php", "Bootstrap","Jquery"]} heading={"Nykaa - Beautify"} disc={"A Collabrative Project : Nykaa is an E-Commerce website for beauty wellness and cosmetic products. It sells beauty, wellness and fashion products across the world."} deploye={"https://beautiffy.netlify.app/"} github={"https://github.com/Shoaib20-1998/Beautify"} />
         </div>
       </div>
       {/* <Carousel /> */}
@@ -39,7 +39,7 @@ function Projects() {
       <Headingofsection heading={"GitHub Calender And Stats"} />
 
       <div st id="gitcalender" className="react-activity-calendar">
-        <img src=" https://ghchart.rshah.org/008080/shoaib20-1998" alt="" />
+        <img src=" https://ghchart.rshah.org/008080/shoaib20-1998" alt="Github Stats" />
       </div>
 
     
