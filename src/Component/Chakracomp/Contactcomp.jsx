@@ -490,17 +490,6 @@ export default function Contactcomp() {
                     >
                       Send Message
                     </Button>
-                    <Button
-                          size="md"
-                          height="48px"
-                          width="330px"
-                          variant="ghost"
-                          // color="#DCE2FF"
-                          bg={'#1A202C'}
-                          color='#1A202C'
-                          id="contact-email">
-                          shoaibmansuri235@gmail.com
-                      </Button>
                   </VStack>
                 </form>
               </Box>

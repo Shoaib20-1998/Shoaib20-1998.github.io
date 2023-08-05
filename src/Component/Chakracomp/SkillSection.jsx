@@ -20,23 +20,31 @@ import node from '../../images/node.png'
 import redux from '../../images/redux.png'
 import mongodb from '../../images/mongodb.png'
 import css from '../../images/css.png'
+import ai from '../../images/ai1.png'
+import prompt from '../../images/prompt.png'
+
 import typescript from '../../images/typescript.png'
 import chakraui from '../../images/chakraui.png'
 import materialui from '../../images/materialui.png'
 import vscode from '../../images/vscode.png'
 const skills = [
-  { name: "React", level: 5, logo: react },
   { name: "HTML", level: 5, logo: html },
   { name: "CSS", level: 5, logo: css },
   { name: "JavaScript", level: 5, logo: javascript },
+  { name: "React", level: 5, logo: react },
+  { name: "React Native", level: 5, logo: react },
+  { name: "Redux", level: 5, logo: redux},
+  { name: "TypeScript", level: 5, logo: typescript },
   { name: "Node.js", level: 5, logo: node },
   { name: "MongoDB", level: 5, logo: mongodb },
   { name: "Express", level: 5, logo: express },
-  { name: "TypeScript", level: 5, logo: typescript },
   { name: "Chakra UI", level: 5, logo: chakraui },
   { name: "Material UI", level: 5, logo: materialui },
-  { name: "Redux", level: 5, logo: redux},
-  { name: "Visual Studio", level: 5, logo: vscode},
+  { name: "Generative AI", level: 5, logo: ai },
+  { name: "Prompt Engineering", level: 5, logo: prompt },
+
+
+  
 
 
 ];

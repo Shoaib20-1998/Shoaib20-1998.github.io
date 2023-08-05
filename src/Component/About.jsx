@@ -18,7 +18,7 @@ function About() {
         </div>
         <div className='description'>
           <h1 className='profheading'> Professional Summary :</h1>
-          <p id="user-detail-intro" align="justify">I have strong skills in JavaScript, Node.js, React, MongoDB, and Express. I am eager to collaborate with other developers and continuously learn new skills and emerging technologies. I have completed several projects that showcase my ability to create robust, scalable, and user-friendly web applications. Additionally, I am a quick learner and enjoy tackling challenges that come with working in a dynamic and fast-paced environment. </p>
+          <p id="user-detail-intro" align="justify">Full-stack web developer with MERN expertise. Successfully completed solo and team projects. Strong problem-solving and communication skills. Quick learner, can leverage generative AI, and adept at adopting new tech stacks swiftly. Eager to contribute effectively in dynamic development teams.</p>
         </div>
       </div>
       <div className='aboutdetails'>
