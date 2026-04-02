@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Shoaib Mansuri",
   title: "Software Engineer",
-  tagline: "4+ years building high-performance React & TypeScript apps at enterprise scale",
+  tagline: "4+ years building high-performance application at enterprise scale",
   email: "shoaibmansuri235@gmail.com",
   phone: "8003740674",
   location: "Hyderabad, Telangana",
