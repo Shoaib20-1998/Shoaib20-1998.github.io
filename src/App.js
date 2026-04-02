@@ -1,32 +1,27 @@
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Experience from './components/Experience';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-import Navbar from './Component/Navbar';
-import Home from './Component/Home';
-import About from './Component/About';
-import Skills from './Component/Skills';
-import Projects from './Component/Projects';
-import Contact from './Component/Contact';
-import styled from '@emotion/styled';
-import { useEffect, useState } from 'react';
-import { color } from 'framer-motion';
-
-function App() { 
- 
+function App() {
   return (
-    <div >    
-        <Navbar />
-        <Home />
+    <div className="bg-light-bg dark:bg-dark-bg text-gray-900 dark:text-gray-100 min-h-screen">
+      <Navbar />
+      <main>
+        <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Contact />
-      </div>
-        
-        
-        
-      
+      </main>
+      <Footer />
+    </div>
   );
 }
-
-
 
 export default App;
