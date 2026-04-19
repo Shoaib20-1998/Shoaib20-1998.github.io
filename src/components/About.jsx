@@ -9,6 +9,7 @@ const competencies = [
   'Performance Optimization',
   'Test-Driven Development',
   'Workflow Automation',
+  'AI-Augmented Development',
   'CI/CD & DevOps',
   'Real-time Systems',
 ];
@@ -53,6 +54,8 @@ function About() {
               Led microfrontend migration using Single-SPA, accelerating release cycles by 30%.
               Created the testing architecture for integrating React Testing Library and Jest
               across micro frontends, and authored 2,000+ test cases to drive standardization.
+              I practice AI-augmented development using tools like Kiro, ChatGPT, Claude, and
+              Amazon Q — building smarter, shipping faster.
             </p>
           </motion.div>
         </div>

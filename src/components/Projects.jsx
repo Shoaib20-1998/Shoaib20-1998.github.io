@@ -22,8 +22,18 @@ function Projects() {
               key={project.id}
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="rounded-xl bg-light-surface dark:bg-dark-surface border border-light-border dark:border-dark-border p-6 flex flex-col hover:shadow-lg dark:hover:shadow-primary-500/10 transition-shadow"
+              className={`rounded-xl p-6 flex flex-col hover:shadow-lg transition-shadow ${
+                project.highlight
+                  ? 'md:col-span-2 bg-gradient-to-br from-primary-500/10 via-light-surface to-light-surface dark:from-primary-500/10 dark:via-dark-surface dark:to-dark-surface border-2 border-primary-500/30 hover:shadow-primary-500/20 dark:hover:shadow-primary-500/20 relative overflow-hidden'
+                  : 'bg-light-surface dark:bg-dark-surface border border-light-border dark:border-dark-border dark:hover:shadow-primary-500/10'
+              }`}
             >
+              {/* Highlight badge */}
+              {project.highlight && (
+                <span className="absolute top-4 right-4 px-3 py-1 text-xs font-bold rounded-full bg-primary-500 text-white uppercase tracking-wider">
+                  ✨ AI-Powered
+                </span>
+              )}
               {/* Project name */}
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                 {project.name}

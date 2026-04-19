@@ -1,5 +1,16 @@
 export const projects = [
   {
+    id: "ai-job-engine",
+    name: "AI Job Application Engine",
+    description: "AI-powered full-stack tool that automates the entire job application workflow. Extracts recent HR job posts (last 24h/48h/1 week) based on user-defined roles like React.js, Frontend, or Backend. Implements an AI pipeline that analyzes skill gaps against the user's resume, auto-customizes resumes by injecting missing skills and refining the experience section, extracts HR email contacts, and sends personalized job-specific outreach emails with the tailored resume attached.",
+    techStack: ["React.js", "Express.js", "MongoDB", "Groq API", "Nodemailer"],
+    impact: "AI-augmented development — end-to-end automation from job discovery to personalized outreach",
+    liveUrl: "https://adorable-taiyaki-372a79.netlify.app/",
+    githubUrl: null,
+    featured: true,
+    highlight: true
+  },
+  {
     id: "data-mesh",
     name: "Data Mesh Platform",
     description: "Enterprise data platform enabling seamless migration from on-premises systems to the cloud, supporting data cleansing, transformation, mastering, governance, and large-scale data migration.",

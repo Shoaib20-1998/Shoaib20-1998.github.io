@@ -43,7 +43,9 @@ export const skillCategories = [
       { name: "ChatGPT", icon: "openai" },
       { name: "Claude.ai", icon: "anthropic" },
       { name: "Kiro", icon: "kiro" },
-      { name: "Amazon Q", icon: "amazonq" }
+      { name: "Amazon Q", icon: "amazonq" },
+      { name: "Grok API", icon: "grok" }
+
     ]
   }
 ];
