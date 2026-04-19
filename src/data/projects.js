@@ -4,7 +4,7 @@ export const projects = [
     name: "Data Mesh Platform",
     description: "Enterprise data platform enabling seamless migration from on-premises systems to the cloud, supporting data cleansing, transformation, mastering, governance, and large-scale data migration.",
     techStack: ["React.js", "TypeScript", "Redux", "React Flow", "Single-SPA", "MUI", "Module Federation", "Jest", "RTL", "Socket.io"],
-    impact: "Real-world client project — enterprise-scale data platform",
+    impact: "Enterprise client project serving Fortune 500 — micro frontend architecture with real-time WebSocket updates",
     liveUrl: "https://projects.albanero.io/login",
     githubUrl: null,
     featured: true
@@ -14,7 +14,7 @@ export const projects = [
     name: "Digi Amigo",
     description: "Digital marketing platform connecting businesses with experts for web development, social media management, and performance-driven marketing campaigns to improve online presence and engagement.",
     techStack: ["HTML", "CSS/SCSS", "JavaScript", "TypeScript"],
-    impact: "Client project — UI development, lead management & customer communication",
+    impact: "Client project — responsive UI, lead management & digital campaign execution",
     liveUrl: "https://digiamigos.com/",
     githubUrl: null,
     featured: true
@@ -24,7 +24,7 @@ export const projects = [
     name: "DSA Whiteboard",
     description: "Lightweight, zero-dependency interactive whiteboard for DSA explanations and technical interviews. Freehand drawing, shapes (arrays, trees, graphs), arrows, text, undo/redo, color palette, and highlighter — all in a single HTML file.",
     techStack: ["Vanilla JS", "HTML5 Canvas", "CSS3"],
-    impact: "Zero dependencies — single HTML file, no framework, no build step",
+    impact: "Zero dependencies, single HTML file — pure Canvas API, no framework needed",
     liveUrl: "https://rainbow-speculoos-13ef6a.netlify.app/",
     githubUrl: null,
     featured: true
@@ -34,7 +34,7 @@ export const projects = [
     name: "Be Stylish",
     description: "India's leading fashion destination featuring men, women, and kids' apparel, footwear, handbags, fashion accessories, and beauty products — all under one roof.",
     techStack: ["React.js", "JavaScript", "TypeScript", "Chakra UI", "Sweet Alert"],
-    impact: "Full lifestyle e-commerce platform with multi-category browsing",
+    impact: "Multi-category e-commerce with responsive product browsing & filtering",
     liveUrl: "https://bestylish.vercel.app/",
     githubUrl: "https://github.com/Shoaib20-1998/Be-Stylish",
     featured: true
@@ -44,7 +44,7 @@ export const projects = [
     name: "MedZ+",
     description: "E-commerce platform for medicines, supplements, and medical test strips with a user-friendly interface enabling convenient and secure online healthcare product purchases.",
     techStack: ["React.js", "JavaScript", "TypeScript", "Redux", "Chakra UI", "Chart.js"],
-    impact: "Healthcare e-commerce with secure transactions",
+    impact: "Healthcare e-commerce with Redux state management & Chart.js analytics",
     liveUrl: "https://medzplus.vercel.app/",
     githubUrl: "https://github.com/Shoaib20-1998/MedZ",
     featured: true
@@ -54,7 +54,7 @@ export const projects = [
     name: "Trendy Shop",
     description: "Full-stack e-commerce platform with admin dashboard, inventory management via Chart.js, JWT authentication, and MVC backend architecture.",
     techStack: ["React.js", "Redux", "Node.js", "Express.js", "MongoDB", "Chart.js", "JWT"],
-    impact: "Collaborative project with full CRUD, auth, and analytics",
+    impact: "Full-stack MERN app with admin dashboard, JWT auth & inventory analytics",
     liveUrl: "https://trendyshops.vercel.app/",
     githubUrl: "https://github.com/Shoaib20-1998/Trendyshop",
     featured: true
